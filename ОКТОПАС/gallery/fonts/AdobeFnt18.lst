@@ -1,0 +1,419 @@
+%!Adobe-FontList 1.18
+%Locale:0x419
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-Bd
+FamilyName:Helvetica Neue LT W1G
+StyleName:75 Bold
+FullName:Helvetica Neue LT W1G 75 Bold
+MenuName:HelveticaNeueLT W1G 55 Roman
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-Bd.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:88564
+FileModTime:1262602614
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,HelveticaNeueLT W1G 75 Bd
+NameArray:0,Mac,4,Helvetica Neue LT W1G 75 Bold
+NameArray:0,Win,1,HelveticaNeueLT W1G 55 Roman
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-BdIt
+FamilyName:Helvetica Neue LT W1G
+StyleName:76 Bold Italic
+FullName:Helvetica Neue LT W1G 76 Bold Italic
+MenuName:HelveticaNeueLT W1G 55 Roman
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-BdIt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:87948
+FileModTime:1262602614
+WeightClass:700
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,18,HelveticaNeueLT W1G 76 BdIt
+NameArray:0,Mac,4,Helvetica Neue LT W1G 76 Bold Italic
+NameArray:0,Win,1,HelveticaNeueLT W1G 55 Roman
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-Blk
+FamilyName:Helvetica Neue LT W1G
+StyleName:95 Black
+FullName:Helvetica Neue LT W1G 95 Black
+MenuName:HelveticaNeueLT W1G 95 Blk
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-Blk.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:96356
+FileModTime:1262602614
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,HelveticaNeueLT W1G 95 Blk
+NameArray:0,Mac,4,Helvetica Neue LT W1G 95 Black
+NameArray:0,Win,1,HelveticaNeueLT W1G 95 Blk
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-BlkIt
+FamilyName:Helvetica Neue LT W1G
+StyleName:96 Black Italic
+FullName:Helvetica Neue LT W1G 96 Black Italic
+MenuName:HelveticaNeueLT W1G 95 Blk
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-BlkIt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:97848
+FileModTime:1262602614
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,HelveticaNeueLT W1G 96 BlkIt
+NameArray:0,Mac,4,Helvetica Neue LT W1G 96 Black Italic
+NameArray:0,Win,1,HelveticaNeueLT W1G 95 Blk
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-Hv
+FamilyName:Helvetica Neue LT W1G
+StyleName:85 Heavy
+FullName:Helvetica Neue LT W1G 85 Heavy
+MenuName:HelveticaNeueLT W1G 65 Md
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-Hv.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:90304
+FileModTime:1262602614
+WeightClass:750
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,HelveticaNeueLT W1G 85 Hv
+NameArray:0,Mac,4,Helvetica Neue LT W1G 85 Heavy
+NameArray:0,Win,1,HelveticaNeueLT W1G 65 Md
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-HvIt
+FamilyName:Helvetica Neue LT W1G
+StyleName:86 Heavy Italic
+FullName:Helvetica Neue LT W1G 86 Heavy Italic
+MenuName:HelveticaNeueLT W1G 65 Md
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-HvIt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:90548
+FileModTime:1262602614
+WeightClass:750
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,18,HelveticaNeueLT W1G 86 HvIt
+NameArray:0,Mac,4,Helvetica Neue LT W1G 86 Heavy Italic
+NameArray:0,Win,1,HelveticaNeueLT W1G 65 Md
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-It
+FamilyName:Helvetica Neue LT W1G
+StyleName:56 Italic
+FullName:Helvetica Neue LT W1G 56 Italic
+MenuName:HelveticaNeueLT W1G 55 Roman
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-It.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:91404
+FileModTime:1262602614
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,18,HelveticaNeueLT W1G 56 It
+NameArray:0,Mac,4,Helvetica Neue LT W1G 56 Italic
+NameArray:0,Win,1,HelveticaNeueLT W1G 55 Roman
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-Lt
+FamilyName:Helvetica Neue LT W1G
+StyleName:45 Light
+FullName:Helvetica Neue LT W1G 45 Light
+MenuName:HelveticaNeueLT W1G 45 Lt
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-Lt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:87680
+FileModTime:1262602614
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,HelveticaNeueLT W1G 45 Lt
+NameArray:0,Mac,4,Helvetica Neue LT W1G 45 Light
+NameArray:0,Win,1,HelveticaNeueLT W1G 45 Lt
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-LtIt
+FamilyName:Helvetica Neue LT W1G
+StyleName:46 Light Italic
+FullName:Helvetica Neue LT W1G 46 Light Italic
+MenuName:HelveticaNeueLT W1G 45 Lt
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-LtIt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:88304
+FileModTime:1262602614
+WeightClass:300
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,18,HelveticaNeueLT W1G 46 LtIt
+NameArray:0,Mac,4,Helvetica Neue LT W1G 46 Light Italic
+NameArray:0,Win,1,HelveticaNeueLT W1G 45 Lt
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-MdIt
+FamilyName:Helvetica Neue LT W1G
+StyleName:66 Medium Italic
+FullName:Helvetica Neue LT W1G 66 Medium Italic
+MenuName:HelveticaNeueLT W1G 65 Md
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-MdIt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:91900
+FileModTime:1262602614
+WeightClass:500
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,18,HelveticaNeueLT W1G 66 MdIt
+NameArray:0,Mac,4,Helvetica Neue LT W1G 66 Medium Italic
+NameArray:0,Win,1,HelveticaNeueLT W1G 65 Md
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-Md
+FamilyName:Helvetica Neue LT W1G
+StyleName:65 Medium
+FullName:Helvetica Neue LT W1G 65 Medium
+MenuName:HelveticaNeueLT W1G 65 Md
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-Md_0.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:89904
+FileModTime:1262602614
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,HelveticaNeueLT W1G 65 Md
+NameArray:0,Mac,4,Helvetica Neue LT W1G 65 Medium
+NameArray:0,Win,1,HelveticaNeueLT W1G 65 Md
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-Roman
+FamilyName:Helvetica Neue LT W1G
+StyleName:55 Roman
+FullName:Helvetica Neue LT W1G 55 Roman
+MenuName:HelveticaNeueLT W1G 55 Roman
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-Roman.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:89872
+FileModTime:1262602614
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,HelveticaNeueLT W1G 55 Roman
+NameArray:0,Mac,4,Helvetica Neue LT W1G 55 Roman
+NameArray:0,Win,1,HelveticaNeueLT W1G 55 Roman
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-Th
+FamilyName:Helvetica Neue LT W1G
+StyleName:35 Thin
+FullName:Helvetica Neue LT W1G 35 Thin
+MenuName:HelveticaNeueLT W1G 35 Th
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-Th.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:85888
+FileModTime:1262602614
+WeightClass:250
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,HelveticaNeueLT W1G 35 Th
+NameArray:0,Mac,4,Helvetica Neue LT W1G 35 Thin
+NameArray:0,Win,1,HelveticaNeueLT W1G 35 Th
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-ThIt
+FamilyName:Helvetica Neue LT W1G
+StyleName:36 Thin Italic
+FullName:Helvetica Neue LT W1G 36 Thin Italic
+MenuName:HelveticaNeueLT W1G 35 Th
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-ThIt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:86236
+FileModTime:1262602614
+WeightClass:250
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,HelveticaNeueLT W1G 36 ThIt
+NameArray:0,Mac,4,Helvetica Neue LT W1G 36 Thin Italic
+NameArray:0,Win,1,HelveticaNeueLT W1G 35 Th
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-UltLt
+FamilyName:Helvetica Neue LT W1G
+StyleName:25 Ultra Light
+FullName:Helvetica Neue LT W1G 25 Ultra Light
+MenuName:HelveticaNeueLT W1G 25 UltLt
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-UltLt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:85940
+FileModTime:1262602614
+WeightClass:275
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,HelveticaNeueLT W1G 25 UltLt
+NameArray:0,Mac,4,Helvetica Neue LT W1G 25 Ultra Light
+NameArray:0,Win,1,HelveticaNeueLT W1G 25 UltLt
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTW1G-UltLtIt
+FamilyName:Helvetica Neue LT W1G
+StyleName:26 Ultra Light Italic
+FullName:Helvetica Neue LT W1G 26 Ultra Light Italic
+MenuName:HelveticaNeueLT W1G 25 UltLt
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Design\Desktop\хельветика Folder\Document fonts\HelveticaNeueLTW1G-UltLtIt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:87332
+FileModTime:1262602614
+WeightClass:275
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,HelveticaNeueLT W1G 26 UltLtIt
+NameArray:0,Mac,4,Helvetica Neue LT W1G 26 Ultra Light Italic
+NameArray:0,Win,1,HelveticaNeueLT W1G 25 UltLt
+NameArray:0,Win,16,Helvetica Neue LT W1G
+%EndFont
+

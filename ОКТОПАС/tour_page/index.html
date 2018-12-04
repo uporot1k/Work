@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <script
+         src="https://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+      <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+      <script src="rate/scripts/jquery.rateit.min.js"></script>
+      <script src="media/build/mediaelement-and-player.min.js"></script>
+      <link rel="stylesheet" href="rate/scripts/rateit.css">
+      <link rel="stylesheet" href="media/build/mediaelementplayer.min.css">
+      <link rel="stylesheet" href="css/grid.css">
+      <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+      <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+      <link rel="stylesheet" href="fonts/fontello-03661092/css/fontello.css">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Document</title>
+   </head>
+   <body>
+      <header class="min">
+         <div class="nav-box linear">
+            <div class="container-fluid">
+               <div class="row justify-content-center">
+                  <div class="col-12 col-xl-9 ">
+                     <div class="nav-container">
+                        <div class="nav-bar max">
+                           <div class="nav-logo">
+                              <a href="#"><img src="img/Логотип.png" alt=""></a>
+                           </div>
+                           <nav>
+                              <ul class="header-nav">
+                                 <li>
+                                    <a href="#">Города<i class="icon-down-open"></i></a>
+                                    <ul class="submenu linear">
+                                       <div class="submenu-box">
+                                          <div class="container-fluid">
+                                             <div class="row justify-content-center">
+                                                <div class="col-xl-9 col-12 ">
+                                                   <div class="submenu-container subcity">
+                                                      <ul>
+                                                         <li><a href="#">Белорусское</a></li>
+                                                         <li><a href="#">Звенигород</a></li>
+                                                         <li><a href="#">Можайск</a></li>
+                                                      </ul>
+                                                      <ul>
+                                                         <li><a href="#">Горьковское</a></li>
+                                                         <li><a href="#">Владимир</a></li>
+                                                      </ul>
+                                                      <ul>
+                                                         <li><a href="#">Казанское</a></li>
+                                                         <li><a href="#">Шатура</a></li>
+                                                         <li><a href="#">Коломна</a></li>
+                                                         <li><a href="#Рязань"></a></li>
+                                                      </ul>
+                                                      <ul>
+                                                         <li>
+                                                            <a href="#">Киевское</a>
+                                                         </li>
+                                                         <li>
+                                                            <a href="#">Калуга</a>
+                                                         </li>
+                                                      </ul>
+                                                      <ul>
+                                                         <li>
+                                                            <a href="#">Курское</a>
+                                                         </li>
+                                                         <li>
+                                                            <a href="#">Серпухов</a>
+                                                         </li>
+                                                         <li>
+                                                            <a href="#">Тула</a>
+                                                         </li>
+                                                      </ul>
+                                                      <ul>
+                                                         <li>
+                                                            <a href="#">Павелецкое</a>
+                                                         </li>
+                                                         <li>
+                                                            <a href="#">Кашира</a>
+                                                         </li>
+                                                      </ul>
+                                                      <ul>
+                                                         <li>
+                                                            <a href="#">Савеловское</a>
+                                                         </li>
+                                                         <li>
+                                                            <a href="#">Дмитров</a>
+                                                         </li>
+                                                      </ul>
+                                                      <ul>
+                                                         <li>
+                                                            <a href="#">Рижское</a>
+                                                         </li>
+                                                         <li>
+                                                            <a href="#">Истра</a>
+                                                         </li>
+                                                         <li>
+                                                            <a href="#">Волоколамск</a>
+                                                         </li>
+                                                      </ul>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </ul>
+                                 </li>
+                                 <li>
+                                    <a href="#">Виды отдыха<i class="icon-down-open"></i></a>
+                                    <ul class="submenu linaer">
+                                       <div class="submenu-box">
+                                          <div class="container-fluid">
+                                             <div class="row justify-content-center">
+                                                <div class="col-xl-9 col-12 ">
+                                                   <div class="submenu-container subdirection">
+                                                      <ul>
+                                                         <li>
+                                                            <a href="#">Велопрогулки</a>
+                                                         </li>
+                                                         <li>
+                                                            <a href="#">Пешие прогулки</a>
+                                                         </li>
+                                                      </ul>
+                                                      <ul>
+                                                         <li>
+                                                            <a href="#">Активный отдых</a>
+                                                         </li>
+                                                         <li>
+                                                            <a href="#">Отдых с детьми</a>
+                                                         </li>
+                                                      </ul>
+                                                      <ul>
+                                                         <li>
+                                                            <a href="#">Музеи</a>
+                                                         </li>
+                                                         <li>
+                                                            <a href="#">Знаменитый усадьбы</a>
+                                                         </li>
+                                                      </ul>
+                                                      <ul>
+                                                         <li>
+                                                            <a href="#">Военное дело</a>
+                                                         </li>
+                                                         <li>
+                                                            <a href="#">Святые места</a>
+                                                         </li>
+                                                      </ul>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </ul>
+                                 </li>
+                                 <li>
+                                    <a href="#">Маршруты</a>
+                                 </li>
+                                 <li>
+                                    <a href="#">Аудиогиды</a>
+                                 </li>
+                                 <li>
+                                    <a href="#">События</a>
+                                 </li>
+                                 <li>
+                                    <a href="#">Фотоотчеты</a>
+                                 </li>
+                                 <li>
+                                    <a href="#">Вход</a>
+                                 </li>
+                                 <li>
+                                    <a href="#">Язык<i class="icon-down-open"></i></a>
+                                    <ul class="submenu linear">
+                                       <div class="submenu-box">
+                                          <div class="container-fluid">
+                                             <div class="row justify-content-center">
+                                                <div class="col-xl-9 col-12 ">
+                                                   <div class="submenu-container subcountry">
+                                                      <ul>
+                                                         <li>
+                                                            <a href="#"><img src="img/001-russia.png" alt=""></a>
+                                                         </li>
+                                                      </ul>
+                                                      <ul>
+                                                         <li>
+                                                            <a href="#"><img src="img/002-united-kingdom.png" alt=""></a>
+                                                         </li>
+                                                      </ul>
+                                                      <ul>
+                                                         <li>
+                                                            <a href="#"><img src="img/003-china.png" alt=""></a>
+                                                         </li>
+                                                      </ul>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header-slaider-box min">
+            <div class="viewport">
+               <ul class="header-slaider" data-current='0'>
+                  <li>
+                     <img src="img/фото.png" alt="">
+                  </li>
+                  <li>
+                     <img src="img/фото.png" alt="">
+                  </li>
+               </ul>
+               <div class="slaider-arrow-left"><i class="icon-left-open-big"></i></div>
+               <div class="slaider-arrow-right"><i class="icon-right-open-big"></i></div>
+            </div>
+         </div>
+      </header>
+      <div class="tour-detail-info min">
+         <div class="container-fluid">
+            <div class="row justify-content-center">
+               <div class="col-9">
+                  <div class="tour-detail-container">
+                     <div class="tour-detail-box max">
+                        <div class="tour-detail-word">
+                           <span>БЕСПЛАТНАЯ ЭКСКУРСИЯ ПО ДМИТРОВУ</span>
+                           <div class="tour-detail-social">
+                              <img src="img/button_social.png" alt="">
+                              <div class="social-box">
+                                 <div class="social-btn">
+                                    <span>поделиться</span>
+                                 </div>
+                                 <div class="social-boxes">
+                                    <div class="odno-link">
+                                       <a href="#"><img src="img/odno.png" alt=""></a>
+                                    </div>
+                                    <div class="fb-link">
+                                       <a href="#"><img src="img/fb.png" alt=""></a>
+                                    </div>
+                                    <div class="vk link">
+                                       <a href="#"><img src="img/vk.png" alt=""></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tour-detail-caption">
+                           <p>
+                        
+                              Дмитров был основан в 1154 году Юрием Долгоруким на месте славянского поселения у реки Яхрома. Сегодня это сравнительно небольшой подмосковный  
+                              городок. В его истории были и взлеты и падения. Немало трудностей удалось пережить этому городу в годы различных войн. В 1941 году именно под Дмитровом началось контрнаступление в рамках легендарной битвы за Москву, за что Дмитров получил звание «Город воинской славы». 
+                              <br>
+                              <br>
+                              Богатая история города доступна каждому. Стоит только записаться на бесплатную экскурсию, организованную ОАО «Центральной ППК». Вы узнаете историю вокзала, посетите уникальный исторический памятник – комплекс зданий Дмитровского кремля, увидите златоглавый Успенский кафедральный собор, построенный еще в XVI веке, прогуляетесь по старинной пешеходной улице Кропоткинской, которую украшают деревянные особняки позапрошлого столетия и скульптуры, олицетворяющие жителей города. Увидите знаменитую бронзовую девочку с котенком, которому сможете на счастье потереть нос!      
+                           </p>
+                        </div>
+                        <div class="tour-main-info">
+                           <div class="city-year">
+                              <span class="city-year-found">XIV</span>
+                              <div class="separator"></div>
+                              <span class="city-year-caption">
+                              <span>век</span><br>
+                              <span>основания</span>
+                              </span>
+                           </div>
+                           <div class="city-people">
+                              <span class="city-people-count">59 328</span>
+                              <div class="separator">|</div>
+                              <span class="city-people-caption">
+                              <span>ЧИСЛЕННОСТЬ</span><br>
+                              <span>населения</span>
+                              </span>
+                           </div>
+                           <div class="city-square">
+                              <span class="city-square-count">26 км<sup>2</sup></span>
+                              <div class="separator">|</div>
+                              <span class="city-square-caption">
+                              <span>ОБЩАЯ</span><br>
+                              <span>площадь</span>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="tour-main-body min">
+         <div class="container-fluid">
+            <div class="row justify-content-center">
+               <div class="col-12">
+                  <div class="row ">
+                     <div class="col-">
+                        <div class="map-container">
+                           <div class="map-box" id='map'>
+                              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad1b061172d5e5d8cd58de9616890da7d16e3957197d093864128c9a8a50b85f9&amp;source=constructor" width="100%" height="720" frameborder="0"></iframe>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-">
+                        <div class="accordeon-container">
+                           <div class="accordeon-box">
+                              <div class="accordeon-body">
+                                 <div id="accordeon">
+                                    <div class="accordeon-item">
+                                       <div class="accordeon-item-word">
+                                          <span>Экскурсия с гидом</span>
+                                          <div class="slide-show rotate">
+                                             <img src="img/slide-show.svg" alt="">
+                                          </div>
+                                       </div>
+                                       <div class="accordeon-item-box ">
+                                          <div class="accordeon-item-body gid">
+                                             <div class="item-body-img">
+                                                <img src="img/accordeon-img.png" alt="">
+                                             </div>
+                                             <div class="item-body-caption">
+                                                <div class="viewport">
+                                                   <p  readonly>   В ходе экскурсии мы <span>увидим</span> храм Рождества Христова XVII века, стоящий на Царевой горе и памятник Александру Невскому. 
+    <span>Полюбуемся</span> на купеческие дома, дошедшие до наших дней памятники русского зодчества. 
+    <span>Спустимся</span> к реке, откуда открывается потрясающий вид на Александровскую слободу. Место, где жил на протяжении 17 лет 
+и творил великие дела Иван Грозный. 
+    <span>Увидим</span> необычный Александровский небоскреб 1914 года постройки и храм Серафима Саровского. 
+    <span>Пройдем</span> к зданию музея сестер Цветаевых, неприметному на первый взгляд, но сыгравшему важную роль в поэтической жизни страны. Именно здесь Марина Цветаева написала многие свои произведения. 
+    <span>Пройдем</span> возле жемчужины исторического центра, усадьбы купца Алексея Михайловича Первушина, почетного гражданина города, члена правления Барановских мануфактур. 
+    <span>Спустимся</span> к реке, откуда открывается потрясающий вид на Александровскую слободу. Место, где жил на протяжении 17 лет 
+и творил великие дела Иван Грозный. 
+    <span>Увидим</span> необычный Александровский небоскреб 1914 года постройки и храм Серафима Саровского. 
+    <span>Пройдем</span> к зданию музея сестер Цветаевых, неприметному на первый взгляд, но сыгравшему важную роль в поэтической жизни страны. Именно здесь Марина Цветаева написала многие свои произведения. 
+    <span>Пройдем</span> возле жемчужины исторического центра, усадьбы купца Алексея Михайловича Первушина, почетного гражданина города, члена правления Барановских мануфактур. 
+                                                   </p>
+                                                </div>
+                                             </div>
+                                             <div class="item-body-offer">
+                                                <div class="item-offer-body">
+                                                   <a href="#">Записаться на бесплатную поездку</a>
+                                                </div>
+                                             </div>
+                                             <div class="item-body-download">
+                                                <div class="body-download"><a href="#">скачать</a></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="accordeon-item">
+                                       <div class="accordeon-item-word">
+                                          <span>Аудиогид</span>
+                                          <div class="slide-show">
+                                             <img src="img/slide-show.svg" alt="">
+                                          </div>
+                                       </div>
+                                       <div class="accordeon-item-box">
+                                          <div class="accordeon-item-body audio">
+                                             <div class="item-body-img">
+                                                <img src="img/woman.png" alt="">
+                                             </div>
+                                             <div class="item-body-caption">
+                                                <div class="viewport">
+                                                   <audio  id='audio-player' >
+                                                      <source src="durak.mp3" type="audio/mpeg">
+                                                   </audio>
+                                                </div>
+                                             </div>
+                                             <div class="item-body-offer">
+                                                <div class="item-offer-body">
+                                                   <a href="#">купить тур</a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!--<div class="accordeon-item">
+                                       <div class="accordeon-item-word">
+                                          <span>Велопрогулка</span>
+                                          <div class="slide-show">
+                                             <img src="img/slide-show.png" alt="">
+                                          </div>
+                                       </div>
+                                       <div class="accordeon-item-box">
+                                           <div class="accordeon-item-body ">
+                                              <div class="item-body-img">
+                                                 <img src="img/accordeon-img.png" alt="">
+                                              </div>
+                                              <div class="item-body-caption">
+                                       <div class="viewport"><p readonly>   В ходе экскурсии мы <span>увидим</span> храм Рождества Христова XVII века, стоящий на Царевой горе и памятник Александру Невскому. 
+                                       <span>Полюбуемся</span> на купеческие дома, дошедшие до наших дней памятники русского зодчества. 
+                                       <span>Спустимся</span> к реке, откуда открывается потрясающий вид на Александровскую слободу. Место, где жил на протяжении 17 лет 
+                                       и творил великие дела Иван Грозный. 
+                                       <span>Увидим</span> необычный Александровский небоскреб 1914 года постройки и храм Серафима Саровского. 
+                                       <span>Пройдем</span> к зданию музея сестер Цветаевых, неприметному на первый взгляд, но сыгравшему важную роль в поэтической жизни страны. Именно здесь Марина Цветаева написала многие свои произведения. 
+                                       <span>Пройдем</span> возле жемчужины исторического центра, усадьбы купца Алексея Михайловича Первушина, почетного гражданина города, члена правления Барановских мануфактур. 
+                                       <span>Спустимся</span> к реке, откуда открывается потрясающий вид на Александровскую слободу. Место, где жил на протяжении 17 лет 
+                                       и творил великие дела Иван Грозный. 
+                                       <span>Увидим</span> необычный Александровский небоскреб 1914 года постройки и храм Серафима Саровского. 
+                                       <span>Пройдем</span> к зданию музея сестер Цветаевых, неприметному на первый взгляд, но сыгравшему важную роль в поэтической жизни страны. Именно здесь Марина Цветаева написала многие свои произведения. 
+                                       <span>Пройдем</span> возле жемчужины исторического центра, усадьбы купца Алексея Михайловича Первушина, почетного гражданина города, члена правления Барановских мануфактур. </p>
+                                              </div>
+                                              <div class="item-body-offer">
+                                                 <div class="item-offer-body">
+                                                    <a href="#">купить тур</a>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                       </div>
+                                       <div class="accordeon-item">
+                                       <div class="accordeon-item-word">
+                                          <span>Пешая прогулка</span>
+                                          <div class="slide-show">
+                                             <img src="img/slide-show.png" alt="">
+                                          </div>
+                                       </div>
+                                       <div class="accordeon-item-box">
+                                           <div class="accordeon-item-body ">
+                                              <div class="item-body-img">
+                                                 <img src="img/accordeon-img.png" alt="">
+                                              </div>
+                                              <div class="item-body-caption">
+                                       <div class="viewport"><p readonly>   В ходе экскурсии мы <span>увидим</span> храм Рождества Христова XVII века, стоящий на Царевой горе и памятник Александру Невскому. 
+                                       <span>Полюбуемся</span> на купеческие дома, дошедшие до наших дней памятники русского зодчества. 
+                                       <span>Спустимся</span> к реке, откуда открывается потрясающий вид на Александровскую слободу. Место, где жил на протяжении 17 лет 
+                                       и творил великие дела Иван Грозный. 
+                                       <span>Увидим</span> необычный Александровский небоскреб 1914 года постройки и храм Серафима Саровского. 
+                                       <span>Пройдем</span> к зданию музея сестер Цветаевых, неприметному на первый взгляд, но сыгравшему важную роль в поэтической жизни страны. Именно здесь Марина Цветаева написала многие свои произведения. 
+                                       <span>Пройдем</span> возле жемчужины исторического центра, усадьбы купца Алексея Михайловича Первушина, почетного гражданина города, члена правления Барановских мануфактур. 
+                                       <span>Спустимся</span> к реке, откуда открывается потрясающий вид на Александровскую слободу. Место, где жил на протяжении 17 лет 
+                                       и творил великие дела Иван Грозный. 
+                                       span>Увидим</span> необычный Александровский небоскреб 1914 года постройки и храм Серафима Саровского. 
+                                       <span>Пройдем</span> к зданию музея сестер Цветаевых, неприметному на первый взгляд, но сыгравшему важную роль в поэтической жизни страны. Именно здесь Марина Цветаева написала многие свои произведения. 
+                                       <span>Пройдем</span> возле жемчужины исторического центра, усадьбы купца Алексея Михайловича Первушина, почетного гражданина города, члена правления Барановских мануфактур. </p>
+                                              </div>
+                                              <div class="item-body-offer">
+                                                 <div class="item-offer-body">
+                                                    <a href="#">купить тур</a>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                       </div>-->
+                                    <div class="accordeon-item">
+                                       <div class="accordeon-item-word">
+                                          <span>Путеводитель по городу</span>
+                                          <div class="slide-show">
+                                             <img src="img/slide-show.svg" alt="">
+                                          </div>
+                                       </div>
+                                       <div class="accordeon-item-box">
+                                          <div class="accordeon-item-body way">
+                                             <div class="item-body-img">
+                                             </div>
+                                             <div class="item-body-caption roud">
+                                                <div class="viewport">
+                                                   <img src="img/5-layers.png" alt="">
+                                                </div>
+                                             </div>
+                                             <div class="item-body-offer ">
+                                                <span>Путеводитель по Дмитрову</span>
+                                                <span>По ссылке Вы можете скачать путеводитель по Дмитрову в формате pdf.</span>
+                                                <div class="item-body-download">
+                                                   <div class="body-download"><a href="#">скачать</a></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      <div class="tour-detail-slider min">
+         <div class="conteiner-fluid">
+            <div class="row justify-content-center no-gutters">
+               <div class="col-9">
+                  <div class="tour-slider-container">
+                     <div class="tour-slider-box max ">
+                        <div class="main-slider-word"><span>Ближайшие поездки</span></div>
+                        <div class="viewport">
+                           <ul class="main-slider">
+                              <li>
+                                 <div class="main-slider-item">
+                                    <div class="main-item-img">
+                                       <img src="img/dmitr-1.png" alt="">
+                                    </div>
+                                    <div class="main-item-caption">
+                                       <div class="item-caption-date">
+                                          <span>13.10.2018</span>
+                                       </div>
+                                       <div class="item-caption-link"><a href="#">Бесплатная экскурсия по Дмитрову</a></div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="main-slider-item">
+                                    <div class="main-item-img">
+                                       <img src="img/dmitr-2.png" alt="">
+                                    </div>
+                                    <div class="main-item-caption">
+                                       <div class="item-caption-date">
+                                          <span>20.10.2018</span>
+                                       </div>
+                                       <div class="item-caption-link"><a href="#">Бесплатная экскурсия по Дмитрову</a></div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="main-slider-item">
+                                    <div class="main-item-img">
+                                       <img src="img/dmitr-1.png" alt="">
+                                    </div>
+                                    <div class="main-item-caption">
+                                       <div class="item-caption-date">
+                                          <span>13.10.2018</span>
+                                       </div>
+                                       <div class="item-caption-link"><a href="#">Бесплатная экскурсия по Дмитрову</a></div>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                           <div class="slaider-arrow-left"><img src="img/strelka_vlevo.png" alt=""></div>
+                           <div class="slaider-arrow-right"><img src="img/strelka_vpravo.png" alt=""></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="tour-reviews min">
+         <div class="container-fluid">
+            <div class="row justify-content-center">
+               <div class="col-9">
+                  <div class="tour-reviews-container">
+                     <div class="tour-reviews-box max">
+                        <div class="tour-reviews-word">
+                           <span>отзывы о туре</span>
+                           <div class="reviews-count">
+                              <div id="rate" class="bigstars" data-rateit-starwidth="32" data-rateit-starheight="30">
+                              </div>
+                              <span>Рейтинг тура</span>
+                           </div>
+                        </div>
+                        <div class="viewport">
+                           <ul class="reviews-slider">
+                              <li>
+                                 <div class="reviews-item">
+                                    <div class="reviews-img-body">
+                                       <img src="img/face_mc.png" alt="">
+                                       <div class="reviews-item-name">
+                                          <span>Марина</span>
+                                       </div>
+                                       <div class="reviews-item-year">
+                                          <span>27 лет</span>
+                                       </div>
+                                       <div class="reviews-item-count slider">
+                                          <span>Оценка тура</span>
+                                          <div class="reviews-count">
+                                             <div id="rate" class="bigstars" data-rateit-starwidth="24" data-rateit-starheight="22">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="reviews-item-caption">
+                                       <div class="item-caption-word">
+                                          <span>По-другому взгянула на личность Ивана Грозного</span>
+                                       </div>
+                                       <div class="item-caption-body">
+                                            <p>
+    Как жаль, что раньше даже не слышала об 
+этом месте.Каюсь, стыдно... А ведь это совсем
+недалеко от моей родной Электростали.</p> 
+    
+<p>Моё знакомство с Александровской
+слободой совпало с праздником - Иванов день.
+Само мероприятие, на мой взгляд, интересно детям - различные мастер-классы, театрализованные представления, угощения. Ну а я в восторге от экскурсии! Замечательный гид, молодая девушка Анна Сергеевна настолько умело рассказала об истории России 16 в.! Экскурсия проводится по нескольким объектам - музей, царская трапезная, сенник спальный, подвалы. Всё настолько пропитано духом старины. Экскурсовод сказала, что на всё это смотрели глаза Ивана Грозного. 
+</p>                                            
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="reviews-item">
+                                    <div class="reviews-img-body">
+                                       <img src="img/face_mc.png" alt="">
+                                       <div class="reviews-item-name">
+                                          <span>Марина</span>
+                                       </div>
+                                       <div class="reviews-item-year">
+                                          <span>27 лет</span>
+                                       </div>
+                                       <div class="reviews-item-count slider">
+                                          <span>Оценка тура</span>
+                                          <div class="reviews-count">
+                                             <div id="rate" class="bigstars" data-rateit-starwidth="24" data-rateit-starheight="22">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="reviews-item-caption">
+                                       <div class="item-caption-word">
+                                          <span>По-другому взгянула на личность Ивана Грозного</span>
+                                       </div>
+                                       <div class="item-caption-body">
+                                            <p>
+Как жаль, что раньше даже не слышала об этом месте. 
+Каюсь, стыдно...  </p>
+<p>Моё знакомство с Александровской слободой совпало с праздником - Иванов день.
+Ну а я в восторге от экскурсии! Замечательный гид, молодая девушка Анна
+Сергеевна настолько умело рассказала об истории России 16 в.!
+Экскурсия проводится по нескольким объектам - музей, царская трапезная,
+сенник спальный, подвалы.  
+</p>                                           
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="reviews-item">
+                                    <div class="reviews-img-body">
+                                       <img src="img/face_mc.png" alt="">
+                                       <div class="reviews-item-name">
+                                          <span>Марина</span>
+                                       </div>
+                                       <div class="reviews-item-year">
+                                          <span>27 лет</span>
+                                       </div>
+                                       <div class="reviews-item-count slider">
+                                          <span>Оценка тура</span>
+                                          <div class="reviews-count slider">
+                                             <div id="rate" class="bigstars" data-rateit-starwidth="24" data-rateit-starheight="22">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="reviews-item-caption">
+                                       <div class="item-caption-word">
+                                          <span>По-другому взгянула на личность Ивана Грозного</span>
+                                       </div>
+                                       <div class="item-caption-body">
+                                            <p>
+                                                    Как жаль, что раньше даже не слышала об этом месте. 
+                                                    Каюсь, стыдно...  </p>
+                                                    <p>Моё знакомство с Александровской слободой совпало с праздником - Иванов день.
+                                                    Ну а я в восторге от экскурсии! Замечательный гид, молодая девушка Анна
+                                                    Сергеевна настолько умело рассказала об истории России 16 в.!
+                                                    Экскурсия проводится по нескольким объектам - музей, царская трапезная,
+                                                    сенник спальный, подвалы.  
+                                                    </p>                                           
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="reviews-item">
+                                    <div class="reviews-img-body">
+                                       <img src="img/face_mc.png" alt="">
+                                       <div class="reviews-item-name">
+                                          <span>Марина</span>
+                                       </div>
+                                       <div class="reviews-item-year">
+                                          <span>27 лет</span>
+                                       </div>
+                                       <div class="reviews-item-count slider">
+                                          <span>Оценка тура</span>
+                                          <div class="reviews-count">
+                                             <div id="rate" class="bigstars" data-rateit-starwidth="24" data-rateit-starheight="22">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="reviews-item-caption">
+                                       <div class="item-caption-word">
+                                          <span>По-другому взгянула на личность Ивана Грозного</span>
+                                       </div>
+                                       <div class="item-caption-body">
+                                            <p>
+                                                    Как жаль, что раньше даже не слышала об этом месте. 
+                                                    Каюсь, стыдно...  </p>
+                                                    <p>Моё знакомство с Александровской слободой совпало с праздником - Иванов день.
+                                                    Ну а я в восторге от экскурсии! Замечательный гид, молодая девушка Анна
+                                                    Сергеевна настолько умело рассказала об истории России 16 в.!
+                                                    Экскурсия проводится по нескольким объектам - музей, царская трапезная,
+                                                    сенник спальный, подвалы.  
+                                                    </p>                                           
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="reviews-item">
+                                    <div class="reviews-img-body">
+                                       <img src="img/face_mc.png" alt="">
+                                       <div class="reviews-item-name">
+                                          <span>Марина</span>
+                                       </div>
+                                       <div class="reviews-item-year">
+                                          <span>27 лет</span>
+                                       </div>
+                                       <div class="reviews-item-count slider">
+                                          <span>Оценка тура</span>
+                                          <div class="reviews-count">
+                                             <div id="rate" class="bigstars" data-rateit-starwidth="24" data-rateit-starheight="22">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="reviews-item-caption">
+                                       <div class="item-caption-word">
+                                          <span>По-другому взгянула на личность Ивана Грозного</span>
+                                       </div>
+                                       <div class="item-caption-body">
+                                          <p>
+                                                Как жаль, что раньше даже не слышала об этом месте. 
+                                                Каюсь, стыдно...  </p>
+                                                <p>Моё знакомство с Александровской слободой совпало с праздником - Иванов день.
+                                                Ну а я в восторге от экскурсии! Замечательный гид, молодая девушка Анна
+                                                Сергеевна настолько умело рассказала об истории России 16 в.!
+                                                Экскурсия проводится по нескольким объектам - музей, царская трапезная,
+                                                сенник спальный, подвалы.  
+                                                </p>                                           
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="min">
+         <div class="container-fluid">
+            <div class="row justify-content-center">
+               <div class="col-9">
+                  <div class="footer-container">
+                     <div class="footer-box max">
+                        <div class="footer-info">
+                           <div class="footer-logo"><img src="img/logo_cppk.png" alt=""></div>
+                        </div>
+                        <div class="footer-navbar">
+                           <ul>
+                              <li><a href="#">О компании</a></li>
+                              <li><a href="#">СМИ о нас</a></li>
+                              <li><a href="">Новости</a></li>
+                           </ul>
+                           <ul>
+                              <li><a href="#">Туристам</a></li>
+                              <li><a href="#">Партнёрам</a></li>
+                           </ul>
+                           <ul>
+                              <li><a href="#">Обратная связь</a></li>
+                              <li><a href="#">Контакты</a></li>
+                           </ul>
+                           <ul>
+                              <li><a href="#">Курсы валют</a></li>
+                              <li><a href="#">USD 62.2396</a></li>
+                              <li><a href="#">EUR 73.7247</a></li>
+                           </ul>
+                           <ul>
+                              <li class="sub">
+                                 <form action="" class="sub-form">
+                                    <span>Подписка на новости</span>
+                                    <input type="text" placeholder="E-mail" class="footer-form">
+                                    <input type="submit" id="subForm">
+                                    <img src="img/button.png" alt="" class="icon-right-open-mini">
+                                 </form>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-img"><img src="img/montazhnaya-oblast-1.svg" alt=""></div>
+      </footer>
+      <script src="slick-1.8.1/slick/slick.min.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>

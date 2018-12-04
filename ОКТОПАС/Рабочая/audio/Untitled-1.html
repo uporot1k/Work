@@ -1,0 +1,52 @@
+<div
+  class="hidden-img"
+  style="width: 100%; height: 60px; background-color:#ccc ; position: relative;"
+>
+  <div class="hidden-header">
+    <span>Открыть картинку</span>
+    <div
+      class="hidden-toggle"
+      style="position:absolute; top:15px;right: 100px;"
+    >
+      <img src="img/arrow.png" alt="" />
+    </div>
+  </div>
+
+  <div class="hidden-content" style="display: none">
+    <img src="img/aleksandrov-body.png" alt="" />
+  </div>
+</div>
+<script>
+  let mas = document.querySelectorAll('.hidden-img');
+  if (mas) {
+      for (let i = 0; i < mas.length; i++) {
+          let header = mas[i].querySelector('.hidden-header');
+          header.addEventListener('click', ()=>{
+              let img = mas[i].querySelector('.hidden-content');
+              $(img).show();
+          });
+      }
+  }
+  $(document).ready(()=>{
+  let mas = document.querySelectorAll('.hidden-img');
+  console.log(mas);
+  if (mas) {
+      for (let i = 0; i < mas.length; i++) {
+        let box = mas[i].querySelector('.hidden-content');
+        box.style.display="none";
+        let header = mas[i].querySelector('.hidden-header');
+        let img = mas[i].querySelector('.hidden-content');
+          header.addEventListener('click', ()=>{
+              if(img.classList.contains('open')){
+                $(img).hide();
+                img.classList.remove('open');
+              }else{
+                $(img).show();
+                img.classList.add('open');
+                }
+              
+          });
+      }
+  }
+  });
+</script>

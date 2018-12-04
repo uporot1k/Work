@@ -1,0 +1,117 @@
+.widget-link, .widget-weather{
+	position: relative;
+	cursor: pointer;
+	width: 57px;
+	height: 57px;
+	display: flex;
+	padding: 8px;
+	background-image: linear-gradient(to top, #0a613e 0%, #47d69e 100%);
+}
+.widget-weather .weather-modal{
+	right: calc(100% + 6px);
+	top:0px;
+	position: absolute;
+	width: 282px;
+	height: 211px;
+	padding: 16px 10px 21px 11px;
+	box-shadow: 0 8px 4px rgba(0, 0, 0, 0.44);
+	background-image: linear-gradient(to top, #0b6340 0%, #46d49c 100%);
+}
+.weather-modal{
+	display: none;
+}
+.modal-topbar{
+	display: flex;
+	justify-content: space-between;
+}
+.modal-topbar .modal-topbar-info .topbar-info-city {
+	position: relative;
+	color: #ffffff;
+	font-family: "HelveticaNeueLTW1G-Th";
+	font-size: 16px;
+}
+.modal-topbar .modal-topbar-info .topbar-info-city span:before {
+	position: absolute;
+	right: -26px;
+	top: 2px;
+	content: '';
+	background-image: url('../img/widget-arrow.png');
+	width: 20px;
+	height: 11px;
+	color: white;
+}
+.modal-topbar .modal-topbar-info .topbar-info-city span{
+	text-transform: uppercase;
+}
+/*.widget-weather:hover > .weather-modal{
+	display: block;
+}
+.modal-topbar .modal-topbar-info .topbar-info-city .info-body-menu:hover > ul{
+	display: block;
+}*/
+.modal-topbar .modal-topbar-info .topbar-info-city ul{
+	display: none;
+	position: absolute;
+	top: -16px;
+	left: -11px;
+	padding: 15px 22px 13px 11px;
+	background-image: url('../img/widget-ul.png');	
+	background-repeat: no-repeat;
+}
+.modal-topbar .modal-topbar-info .topbar-info-city ul li a{
+	color: white;
+}
+.modal-topbar .modal-topbar-info .topbar-info-date {
+	margin-top: 6px;
+	color: #ffffff;
+}
+.modal-topbar .modal-topbar-info .topbar-info-date span{
+	color: #ffffff;
+	font-family: "HelveticaNeueLTW1G-Th";
+	font-size: 16px;
+}
+.modal-topbar .modal-topbar-info .topbar-info-temperature {
+	margin-top: 20px;
+	color: #ffffff;
+	font-family: "HelveticaNeueLTW1G-Th";
+	font-size: 39px;
+	text-transform: uppercase;
+}
+.modal-topbar .modal-topbar-info .topbar-info-temperature span{
+	margin-right: 15px;
+}
+.modal-topbar  .modal-topbar-img{
+	margin-top: auto;
+}
+.modal-botbar{
+	margin-top: 25px;
+	display: flex;
+	width: 100%;
+}
+.modal-botbar .botbar-weather-item{
+	height: 63px;
+	color: white;
+	font-family: "HelveticaNeueLTW1G-UltLt";
+	font-size: 12px;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	padding: 0 10px;
+	border-right: 2px solid white;
+}
+.modal-botbar .botbar-weather-item span:first-child{
+	font-size: 16px;
+}
+.modal-botbar .botbar-weather-item:first-child{
+	padding-left: 0
+}
+.modal-botbar .botbar-weather-item:last-child{
+	border-right: none;
+}
+.modal-botbar .botbar-weather-item *{
+	margin: 0 auto;
+}
+
+.modal-botbar .botbar-weather-item .weather-item-img{
+	margin-top: auto;
+}
