@@ -29,14 +29,25 @@ $(document).ready(()=>{
               }
             }]
        });
-       $('.item-caption[data-mh="group-name"]').matchHeight(
-        {
-            byRow: true,
-            property: 'height',
-            target: null,
-            remove: false
-        }
-       );
+
+       let play = $('.pause').children()[0];
+       let video = $('#bgvideo')[0];
+       console.log(play);
+       console.log(video);
+       $(play).click(()=>{
+           if(video.paused){
+            video.play();
+            play.classList.remove('fa-play-circle');
+            play.classList.add('fa-pause-circle');
+           }else{
+            video.pause();
+            play.classList.remove('fa-pause-circle');
+            play.classList.add('fa-play-circle');
+           
+           }
+           
+       });
+       
      let dots = $('.slaider-number');
      let slickDots = $('.slick-dots').find('li');
   
