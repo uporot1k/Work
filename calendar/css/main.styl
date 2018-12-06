@@ -1,6 +1,7 @@
 body
     margin: 0
     padding: 0
+    font-family: Roboto;
 ul
     list-style: none
 .wrapper
@@ -18,7 +19,7 @@ ul
         height 50px
         width 100%
         color: #ffffff
-        font-family: Roboto;
+
         font-size: 14px;
         font-weight: 400;
         line-height: 17.13px;
@@ -39,10 +40,18 @@ ul
         background-color #072035
         .calendar-body
             .choose-month-box
+                display none
                 overflow hidden
                 .choose-month
                     display flex
                     flex-flow: row
-
-
-        
+            .calendar-content-box
+                .content-days
+                    border-top 1px solid rgba(255, 255, 255, .1);
+                    display flex
+                    justify-content space-around
+                    color #fff
+                    font-size 13px
+                    font-weight 400
+                    line-height 13.18px
+                    padding: 5px 0
