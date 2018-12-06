@@ -1,51 +1,6 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video 
-	margin 0
-	padding 0
-	border 0
-	font-size 100%
-	font inherit
-	vertical-align baseline
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section 
-	display block
-body 
-	line-height 1
-ol, ul 
-	list-style none
-*
-	box-sizing: border-box
-@font-face {
-  font-family: "GraphikMedium";
-  src: url("../fonts/GraphikMedium.otf") format("opentype");
-}
-@font-face {
-  font-family: "GraphikRegular";
-  src: url("../fonts/GraphikRegular.otf") format("opentype");
-}
-@font-face {
-  font-family: "GraphikSemibold";
-  src: url("../fonts/GraphikSemibold.otf") format("opentype");
-}
-img
-	width 100%
-	display block
-	height auto
-.container
-	width 1140px
-	margin-left: auto
-	margin-right: auto
+@import 'help.styl'
+@import 'animation.styl'
+
 header 
 	position fixed
 	top: 0
@@ -144,67 +99,50 @@ header
 	background-image linear-gradient(123deg, rgba(0, 148, 255, 0) 0%, rgba(255, 255, 255, 0) 100%)
 	position relative
 	overflow hidden
+	.header-breadcrumb
+		z-index 10
+		width 100%
+		position: absolute
+		top 30px
+		font-size: 12px
+		font-family "GraphikRegular"
+		color: #ffffff
+		a
+			color: #fff
 	.banner-text
 		position: absolute
-		top: 224px
-		left 385px
+		width 100%
+		top 272px
 		.text-img
 			margin-bottom 18px	
 		.text-content
 			color #ffffff
-			width 812px
-			font-family "GraphikRegular"
-			font-size 48px
-			font-weight 400
-			letter-spacing 0.14px
-			line-height 68px
-			margin-bottom 203px
+			text-transform: uppercase
+			font-family: "GraphikSemibold";
+			position relative
+			.service-packet
+				font-size: 24px;
+				font-weight: 600;
+				line-height: 76px;
+			.packet-name
+				font-size: 82px
+				padding-bottom: 28px
+				margin-bottom: 27px
+				border-bottom: 20px solid #fff
+			.packet-caption	
+				font-family "GraphikRegular"
+				font-size: 24px;
+				text-transform: none
+			.content-img
+				position: absolute	
+				right 0
+				bottom -50%
+		.banner-mouse
+			width 28px
+			height 57px
+			img
+				width 100%		
 
-		.text-btn
-			display flex
-			width 635px
-			justify-content space-between	
-			.order-btn
-				width 253px
-				height 66px
-				border-radius 35px
-				background-color #ffffff
-				display flex
-				justify-content center
-				align-items center
-				a
-					color #0068ff
-					font-family "GraphikSemibold"
-					font-size 18px
-					font-weight 600
-					letter-spacing 0.14px
-					line-height 21px
-					text-decoration: none
-			.join-btn
-				width 245px
-				height 66px
-				border-radius 40px
-				border 2px solid #ffffff	
-				display flex
-				justify-content center
-				align-items center	
-				a
-					color #fff
-					font-family "GraphikRegular"
-					font-size 18px
-					font-weight 600
-					letter-spacing 0.14px
-					line-height 21px
-					text-decoration: none
-			.pause
-				width 80px
-				height 80px
-				margin-bottom: 70px
-				cursor: pointer
-				margin-top: -7px
-				*
-					font-size: 80px
-					color: #fff		
 
 footer
 	background-color #4b4b4b
@@ -288,32 +226,7 @@ footer
 					margin-top: 16px		
 
 
-.slick-dots 
-	bottom: -43px;
-	li 
-	
-		button
-			&:before
-				transform: scale(2)
-				color: #0068ff;
-		&.slick-active			
-			button
-				&:before
-					transform: scale(2)
-					opacity 1;
-					color: #0068ff;
-.current:after{
-	animation-name current1
-    animation-duration 1s
-}
-@keyframes current1 {
-  from {
-    opacity 0
-  }
-  to {
-    opacity 1
-  }
-}
+
 
 @media screen and (max-width 1500px)
 	header

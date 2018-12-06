@@ -121,6 +121,9 @@ ul {
   font-family: "GraphikSemibold";
   src: url("../fonts/GraphikSemibold.otf") format("opentype");
 }
+a {
+  text-decoration: none;
+}
 img {
   width: 100%;
   display: block;
@@ -130,6 +133,54 @@ img {
   width: 1140px;
   margin-left: auto;
   margin-right: auto;
+}
+.slick-dots {
+  bottom: -43px;
+}
+.slick-dots li button:before {
+  transform: scale(2);
+  color: #0068ff;
+}
+.slick-dots li.slick-active button:before {
+  transform: scale(2);
+  opacity: 1;
+  color: #0068ff;
+}
+.current:after {
+  animation-name: current1;
+  animation-duration: 1s;
+}
+@-moz-keyframes current1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes current1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes current1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes current1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 header {
   position: fixed;
@@ -242,75 +293,59 @@ header .header-btn .signIn a {
   position: relative;
   overflow: hidden;
 }
+.main-banner .header-breadcrumb {
+  z-index: 10;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  font-size: 12px;
+  font-family: "GraphikRegular";
+  color: #fff;
+}
+.main-banner .header-breadcrumb a {
+  color: #fff;
+}
 .main-banner .banner-text {
   position: absolute;
-  top: 224px;
-  left: 385px;
+  width: 100%;
+  top: 272px;
 }
 .main-banner .banner-text .text-img {
   margin-bottom: 18px;
 }
 .main-banner .banner-text .text-content {
   color: #fff;
-  width: 812px;
-  font-family: "GraphikRegular";
-  font-size: 48px;
-  font-weight: 400;
-  letter-spacing: 0.14px;
-  line-height: 68px;
-  margin-bottom: 203px;
-}
-.main-banner .banner-text .text-btn {
-  display: flex;
-  width: 635px;
-  justify-content: space-between;
-}
-.main-banner .banner-text .text-btn .order-btn {
-  width: 253px;
-  height: 66px;
-  border-radius: 35px;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main-banner .banner-text .text-btn .order-btn a {
-  color: #0068ff;
+  text-transform: uppercase;
   font-family: "GraphikSemibold";
-  font-size: 18px;
+  position: relative;
+}
+.main-banner .banner-text .text-content .service-packet {
+  font-size: 24px;
   font-weight: 600;
-  letter-spacing: 0.14px;
-  line-height: 21px;
-  text-decoration: none;
+  line-height: 76px;
 }
-.main-banner .banner-text .text-btn .join-btn {
-  width: 245px;
-  height: 66px;
-  border-radius: 40px;
-  border: 2px solid #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-banner .banner-text .text-content .packet-name {
+  font-size: 82px;
+  padding-bottom: 28px;
+  margin-bottom: 27px;
+  border-bottom: 20px solid #fff;
 }
-.main-banner .banner-text .text-btn .join-btn a {
-  color: #fff;
+.main-banner .banner-text .text-content .packet-caption {
   font-family: "GraphikRegular";
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.14px;
-  line-height: 21px;
-  text-decoration: none;
+  font-size: 24px;
+  text-transform: none;
 }
-.main-banner .banner-text .text-btn .pause {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 70px;
-  cursor: pointer;
-  margin-top: -7px;
+.main-banner .banner-text .text-content .content-img {
+  position: absolute;
+  right: 0;
+  bottom: -50%;
 }
-.main-banner .banner-text .text-btn .pause * {
-  font-size: 80px;
-  color: #fff;
+.main-banner .banner-text .banner-mouse {
+  width: 28px;
+  height: 57px;
+}
+.main-banner .banner-text .banner-mouse img {
+  width: 100%;
 }
 footer {
   background-color: #4b4b4b;
@@ -401,22 +436,6 @@ footer .footer-container .footer-info-box .info-box-caption .box-caption-address
 footer .footer-container .footer-info-box .info-box-caption div {
   margin-top: 16px;
 }
-.slick-dots {
-  bottom: -43px;
-}
-.slick-dots li button:before {
-  transform: scale(2);
-  color: #0068ff;
-}
-.slick-dots li.slick-active button:before {
-  transform: scale(2);
-  opacity: 1;
-  color: #0068ff;
-}
-.current:after {
-  animation-name: current1;
-  animation-duration: 1s;
-}
 @media screen and (max-width: 1500px) {
   header nav {
     margin-left: 0;
@@ -447,37 +466,5 @@ footer .footer-container .footer-info-box .info-box-caption div {
   }
   .main-banner .banner-text {
     left: 202px;
-  }
-}
-@-moz-keyframes current1 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes current1 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes current1 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes current1 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
