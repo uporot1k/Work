@@ -1,6 +1,30 @@
 .current:after{
-	animation-name current1
-    animation-duration 1s
+	animation-name: current1;
+    animation-duration: 1s;
+}
+.mouse-anim{
+    animation: mouse-anim linear 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+}
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+.rippleEffect {
+    animation: rippleDrop .6s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 @keyframes current1 {
   from {
@@ -10,3 +34,23 @@
     opacity 1
   }
 }
+@keyframes mouse-anim{
+  0% {
+      transform:  translate(0px,0px)  ;
+    }
+    20% {
+      transform:  translate(0px,-25px)  ;
+    }
+    50% {
+      transform:  translate(0px,0px)  ;
+    }
+    80% {
+      transform:  translate(0px,25px)  ;
+    }
+    80% {
+      transform:  translate(0px,25px)  ;
+    }
+    100% {
+      transform:  translate(0px,0px)  ;
+    }
+  }

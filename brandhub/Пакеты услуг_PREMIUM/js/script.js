@@ -1,76 +1,32 @@
 $(document).ready(()=>{
     
-        $('.alg-slaider').slick({
-             dots:true,
-             arrows:false,
-             
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            
-        });
+    let body = $('body')[0];
+    console.log(body)
 
-        $('.portfolio-slaider').slick({
-            dots:true,
-            arrows:false,
-            centerMode: true,
-            centerPadding: '450px',
-            adaptiveHeight: true,
-           slidesToShow: 1,
-           slidesToScroll: 1,
 
-           responsive: [
-            {
-              breakpoint:1500,
-              settings: {
+    let layerOne = document.querySelector('#scene');
+ 
 
-                centerMode: true,
-
-                slidesToShow: 1
-              }
-            }]
-       });
-
-       let play = $('.pause').children()[0];
-       let video = $('#bgvideo')[0];
-       console.log(play);
-       console.log(video);
-       $(play).click(()=>{
-           if(video.paused){
-            video.play();
-            play.classList.remove('fa-play-circle');
-            play.classList.add('fa-pause-circle');
-           }else{
-            video.pause();
-            play.classList.remove('fa-pause-circle');
-            play.classList.add('fa-play-circle');
-           
-           }
-           
-       });
-       
-     let dots = $('.slaider-number');
-     let slickDots = $('.slick-dots').find('li');
-  
-     $('.alg-slaider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-         dots[currentSlide].classList.remove('active');
-         dots[nextSlide].classList.add('active');
-        /*for (let k = 0; index < dots.length; k++) {
-            dots[k].classList.remove('active');
-            
-        }*/
-      });
-     for (let i = 0; i < dots.length; i++) {
-        $(dots[i]).click(()=>{
-            $(slickDots[i]).click();
-        });
-     }
+    body.addEventListener('mousemove',function(e){
+    var pageX = e.clientX,
+    pageY = e.clientY;
+ 
+   
+    layerOne.style.transform = 'translateX(' + pageX/1000+ '%) translateY(' + pageY/1000 + '%)';
+   
+    });
 
      let anchor = $('.anchor');
      let headerNav = $('.header-nav li');
 
+    $('a').click((event)=>{
+        event.preventDefault();
+        console.log(1);
+    });
+   
      
 
-    for (let k = 0; k < headerNav.length; k++) {
+    /*for (let k = 0; k < headerNav.length; k++) {
 
         $(headerNav[k]).click((event)=>{
             event.preventDefault();
@@ -154,5 +110,5 @@ $(document).ready(()=>{
        let box = $(`.${selector} li`)[flag];
        box.classList.add(сlass);
    };
-   
+   */
 });

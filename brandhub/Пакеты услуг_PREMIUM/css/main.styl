@@ -113,6 +113,8 @@ header
 		position: absolute
 		width 100%
 		top 272px
+		display flex
+		flex-direction: column
 		.text-img
 			margin-bottom 18px	
 		.text-content
@@ -125,9 +127,10 @@ header
 				font-weight: 600;
 				line-height: 76px;
 			.packet-name
-				font-size: 82px
+				font-size: 106px
 				padding-bottom: 28px
 				margin-bottom: 27px
+				letter-spacing: 7px
 				border-bottom: 20px solid #fff
 			.packet-caption	
 				font-family "GraphikRegular"
@@ -135,15 +138,229 @@ header
 				text-transform: none
 			.content-img
 				position: absolute	
-				right 0
-				bottom -50%
+				right -180px
+				bottom -63%
 		.banner-mouse
-			width 28px
+			width 100%
 			height 57px
+			display flex
+			justify-content center
+			margin-top: 130px
 			img
-				width 100%		
+				width 28px
+				height 57px	
+
+.main-content
+	padding-top: 100px
+	h1
+		color #4b4b4b
+		font-family "GraphikSemibold"
+		font-size 47px
+		font-weight 600
+		line-height 59px
+		text-transform uppercase
+		position relative
+		&:after
+			position absolute
+			content: ''
+			bottom -30px
+			left 0
+			width 60%
+			height 12px
+			background-color #0068ff
+	.packet-container
+		display flex
+		margin-top: 104px
+		.packet-item
+			position relative
+			color #0068ff
+			margin-right 30px
+			&:last-child
+				margin-right: 0
+			.card-bg
+				position: absolute
+				bottom 0
+				right 10px
+				z-index 0
+				opacity 0.99
+			.packet-name
+				font-family: "GraphikSemibold";
+				font-size: 18px;
+				font-weight: 600;
+
+			.item-card
+				z-index 10
+				margin-top: 20px
+				padding: 0 60px
+				padding-top: p = 60px
+				width: w = 350px
+				height 487px
+				box-shadow 6px 6px 31px rgba(0, 0, 0, 0.16)
+				
+				background-image url('../img')
+				font-family "GraphikRegular"
+				position relative
+
+				.card-name-box
+					z-index 1
+					display flex
+					align-items: center
+					font-family: "GraphikSemibold";
+					.card-number
+						color #ec6608
+						font-size 95px
+						position relative
+						&:after
+							position absolute
+							content: ''
+							left 0
+							bottom -5px
+							width 100%
+							height 7px
+							background-color #0068ff	
+					.card-name
+						margin-left: 17px
+						font-size 14px	
+						line-height: 18px;
+						text-transform: uppercase
+				.card-content
+					z-index 1
+					margin-top: 20px
+					.content
+						display flex
+						flex-direction: column
+						span 
+							padding: 5px 0
+						p
+							font-size 14px
+							font-weight 400
+							line-height 25px
+						.important	
+							font-family: 'GraphikSemibold'
+							color #ec6608
+							text-transform: uppercase
+				.card-btn-box
+					width 'calc(%s - %s)' % ( w p*2)
+					position: absolute
+					bottom 54px
+					display flex
+					justify-content center
+					z-index 1
+					.card-btn 			
+						display flex
+						justify-content center
+						align-items center
+						width 160px
+						height 37px
+						box-shadow 6px 6px 31px rgba(9, 65, 145, 0.16)
+						background-color #ffffff	
+						border-radius: 25px		
+						a
+							color #0068ff
+							font-family "GraphikMedium"
+							font-size 14px
+							font-weight 500
+							line-height 25px
+				.packet-count
+					position: absolute
+					top 20px
+					right 20px
+					z-index 1
+					.count
+						display block
+						width 20px
+						height 20px
+						background-color #0068ff
+						margin-bottom: 20px
+						&:nth-child(1)
+							opacity 0.3
+						&:nth-child(2)
+							opacity 0.5
+			
 
 
+				&:after
+					z-index 10
+					position: absolute
+					content: ''
+					bottom 0
+					left 0
+					width 100%
+					height 14px
+					background-color #3e8dff
+.current-price
+	padding-top: 50px
+	padding-bottom: 80px
+	.current-price-word
+		color #0068ff
+		font-family "GraphikSemiBold"
+		text-transform: uppercase
+		font-size 18px
+		font-weight 600
+		margin-bottom: 20px
+	.price-block
+		width 100%
+		height 368px
+		padding-left: 60px
+		padding-top: 75px
+		background-color #0068ff
+		color #fff
+		font-family "GraphikRegular"
+		position relative
+		overflow hidden
+		.total-price
+			z-index 3
+			font-size 34px
+			font-weight 600
+			font-family "GraphikSemiBold"
+			position relative
+			.price
+				position relative
+				&:after
+					position absolute
+					content ''
+					width 62px
+					height 7px
+					background-color #ffffff
+					bottom -16px
+					left 0
+			.fas
+				font-size 14px
+			.total-include
+				margin-top: 34px
+				font-family "GraphikRegular"
+				font-size 12px
+		.price-btn
+			z-index 3
+			margin-top: 20px
+			.choose-more
+				width 325px
+				height 37px
+				border-radius 19px
+				display flex
+				justify-content center
+				align-items center
+				border 1px solid #ffffff
+				margin-bottom: 20px
+				a
+					color: #fff
+					font-family: 'GraphikMedium';
+			.get-offer
+				width 325px
+				height 37px
+				border-radius 19px
+				display flex
+				justify-content center
+				align-items center
+				background-color #fff
+				a
+					color #ec6608	
+					font-family: 'GraphikMedium';
+		.block-bg	
+			position absolute
+			right 50px
+			top 100px
+			z-index 2
 footer
 	background-color #4b4b4b
 	position relative
