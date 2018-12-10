@@ -56,7 +56,60 @@
     
  
   }
+.hidden
+	opacity 0
 
+.visible{
+	opacity 1
+  animation anime 1s linear
+}
+.bs-fo{
+  box-shadow:none !important;
+  animation bs-fo 0.2s linear !important
+  }
+.bs-fi{
+  animation bs-fi 0.2s linear !important
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.16)  ;
+  }  
+
+ @keyframes bs-fo{
+  0%{
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.16);
+  }
+  100%{
+  box-shadow:none;
+  }
+
+} 
+ @keyframes bs-fi{
+  0%{
+  box-shadow:none;
+  
+  }
+  100%{
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.16);
+  }
+
+} 
+@keyframes anime{
+  0%{
+  opacity 0
+  }
+  100%{
+  opacity 1
+  }
+
+}
+@keyframes sheen-bg{
+  0%{
+    
+    background-color #fff
+    }
+  100%{
+    
+    background-color #0068ff 
+    }
+  }
 @keyframes sheen {
   0% {
   

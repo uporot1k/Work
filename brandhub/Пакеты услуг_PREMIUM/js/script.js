@@ -15,17 +15,68 @@ $(document).ready(()=>{
     layerOne.style.transform = 'translateX(' + pageX/1000+ '%) translateY(' + pageY/1000 + '%)';
    
     });
-
-     let anchor = $('.anchor');
-     let headerNav = $('.header-nav li');
-
-    $('a').click((event)=>{
-        event.preventDefault();
-        console.log(1);
+    $('.anime').addClass('hidden');
+    let anime = calcTopOffset('anime');
+    window.addEventListener('scroll',function(e) {
+        //do stuff
+        scrollTab(anime);
+        
     });
-   
-     
+    
+    
+    $('.btn').mousedown((e)=>{
+        let target = e.target;
+        if(target.classList.contains('btn')){
+            target.classList.remove('bs-fi');
+            target.classList.add('bs-fo');
+        }else{
+            let parent = $(target).parent()[0];
+            parent.classList.remove('bs-fi');
+            parent.classList.add('bs-fo');
+        }
 
+    });
+    $('.btn').mouseup((e)=>{
+        let target = e.target;
+        console.log(e.target);
+        if(target.classList.contains('btn')){
+
+            target.classList.remove('bs-fo');
+            target.classList.add('bs-fi');
+        }else{
+            let parent = $(target).parent()[0];
+            console.log(parent);
+            parent.classList.remove('bs-fo');
+            parent.classList.add('bs-fi');
+        }
+        
+    });
+        
+ 
+    function scrollTab(mas){
+        mas.forEach((e)=>{
+            let different = Math.abs(e.box.boxHeight -$(window).scrollTop());
+            
+            if (different < 800){
+            
+                e.box.classList.remove('hidden');
+                e.box.classList.add('visible');
+                
+            }
+        });
+    }
+    function calcTopOffset(sel){
+        let selector = [];
+        let box = $(`.${sel}`);
+
+        for (let i = 0; i < box.length; i++) {
+           let boxTmp = box[i];
+           boxTmp.position = i;  
+           boxTmp.boxHeight = $(box[i]).offset().top;           
+           selector[i] = {box : boxTmp};           
+       }
+        return selector;
+    }
     /*for (let k = 0; k < headerNav.length; k++) {
 
         $(headerNav[k]).click((event)=>{

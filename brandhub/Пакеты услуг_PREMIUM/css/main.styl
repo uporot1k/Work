@@ -261,15 +261,20 @@ header
 						box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.16);
 						background-color #ffffff	
 						border-radius: 25px		
+						z-index 11
 						a
 							color #0068ff
 							font-family "GraphikMedium"
 							font-size 14px
 							font-weight 500
 							line-height 25px
+							z-index 12
 						&:hover
+							animation sheen-bg 0.4s linear
 							a
 								color: #fff
+						
+
 				.packet-count
 					position: absolute
 					top 20px
@@ -366,6 +371,7 @@ header
 				background-color #fff
 				&:hover
 					box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.16);
+					
 				a
 					color #ec6608	
 					font-family: 'GraphikMedium';
