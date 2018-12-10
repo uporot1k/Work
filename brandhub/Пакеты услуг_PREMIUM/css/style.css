@@ -197,7 +197,7 @@ a
   transform: skewX(-50deg) translateX(0);
 }
 .sheen:hover:before {
-  animation: sheen 0.3s linear;
+  animation: sheen 0.4s linear;
 }
 @-moz-keyframes sheen {
   0% {
