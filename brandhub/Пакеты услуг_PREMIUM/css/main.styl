@@ -231,6 +231,11 @@ header
 						flex-direction: column
 						span 
 							padding: 5px 0
+							position relative
+							
+				
+							
+
 						p
 							font-size 14px
 							font-weight 400
@@ -239,6 +244,7 @@ header
 							font-family: 'GraphikSemibold'
 							color #ec6608
 							text-transform: uppercase
+							margin-bottom: 9px
 				.card-btn-box
 					width 'calc(%s - %s)' % ( w p*2)
 					position: absolute
@@ -252,7 +258,7 @@ header
 						align-items center
 						width 160px
 						height 37px
-						box-shadow 6px 6px 31px rgba(9, 65, 145, 0.16)
+						box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.16);
 						background-color #ffffff	
 						border-radius: 25px		
 						a
@@ -261,6 +267,9 @@ header
 							font-size 14px
 							font-weight 500
 							line-height 25px
+						&:hover
+							a
+								color: #fff
 				.packet-count
 					position: absolute
 					top 20px
@@ -342,6 +351,8 @@ header
 				align-items center
 				border 1px solid #ffffff
 				margin-bottom: 20px
+				&:hover
+					box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.16);
 				a
 					color: #fff
 					font-family: 'GraphikMedium';
@@ -353,13 +364,16 @@ header
 				justify-content center
 				align-items center
 				background-color #fff
+				&:hover
+					box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.16);
 				a
 					color #ec6608	
 					font-family: 'GraphikMedium';
 		.block-bg	
 			position absolute
-			right 50px
-			top 100px
+			right 180px
+			width 400px
+			top 45px
 			z-index 2
 footer
 	background-color #4b4b4b

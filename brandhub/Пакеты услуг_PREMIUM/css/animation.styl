@@ -19,7 +19,65 @@
 .rippleEffect {
     animation: rippleDrop .6s linear;
 }
+.blink_on:after{
+  animation blink 15s linear
+  animation-iteration-count: infinite;
+  content ""
+  position absolute
+  top 0
+  left 0em
+  width 100%
+  height 100%
+  background linear-gradient(to left, rgba(255,255,255,.0), rgba(255,255,255,.8), rgba(255,255,255,.0)) no-repeat -2em 0%
+  background-size 2em 100%
 
+  transform skewX(-50deg)
+}
+.sheen:hover{
+  background-color #0068ff !important;
+    a
+    color: #fff !important
+  }
+.sheen:before{
+  content: "";
+  //background: linear-gradient(to right, rgba(125,185,232,0) 1%,rgba(30,87,153,0) 16%,rgba(30,87,153,0.19) 20%,rgba(78,136,193,1) 37%,rgba(125,185,232,1) 54%,rgba(125,185,232,1) 62%,rgba(125,185,232,0.7) 69%,rgba(125,185,232,0) 90%);
+   background-color #fff
+    height: 100%;
+    width: 2em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-50deg) translateX(0);
+  }
+.sheen:hover:before{
+   
+    animation sheen 0.3s linear
+    
+ 
+  }
+
+@keyframes sheen {
+  0% {
+    transform: skewX(-50deg) translateX(0);
+  }
+  100% {
+    transform: skewX(-50deg) translateX(15.5em);
+  }
+}
+
+@keyframes blink {
+  0%{
+    background-position 0% 0%
+    }
+  10%{
+      background-position 130% 0%
+    }
+  100%{
+    background-position 130% 0%
+    }
+  
+  }
 @keyframes rippleDrop {
   100% {
     transform: scale(2);

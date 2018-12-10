@@ -167,6 +167,114 @@ img {
 .rippleEffect {
   animation: rippleDrop 0.6s linear;
 }
+.blink_on:after {
+  animation: blink 15s linear;
+  animation-iteration-count: infinite;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0em;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255,0)) no-repeat -2em 0%;
+  background-size: 2em 100%;
+  transform: skewX(-50deg);
+}
+.sheen:hover {
+  background-color: #0068ff !important;
+a
+  color: #fff !important;
+}
+.sheen:before {
+  content: "";
+  background-color: #fff;
+  height: 100%;
+  width: 2em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  transform: skewX(-50deg) translateX(0);
+}
+.sheen:hover:before {
+  animation: sheen 0.3s linear;
+}
+@-moz-keyframes sheen {
+  0% {
+    transform: skewX(-50deg) translateX(0);
+  }
+  100% {
+    transform: skewX(-50deg) translateX(15.5em);
+  }
+}
+@-webkit-keyframes sheen {
+  0% {
+    transform: skewX(-50deg) translateX(0);
+  }
+  100% {
+    transform: skewX(-50deg) translateX(15.5em);
+  }
+}
+@-o-keyframes sheen {
+  0% {
+    transform: skewX(-50deg) translateX(0);
+  }
+  100% {
+    transform: skewX(-50deg) translateX(15.5em);
+  }
+}
+@keyframes sheen {
+  0% {
+    transform: skewX(-50deg) translateX(0);
+  }
+  100% {
+    transform: skewX(-50deg) translateX(15.5em);
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    background-position: 0% 0%;
+  }
+  10% {
+    background-position: 130% 0%;
+  }
+  100% {
+    background-position: 130% 0%;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    background-position: 0% 0%;
+  }
+  10% {
+    background-position: 130% 0%;
+  }
+  100% {
+    background-position: 130% 0%;
+  }
+}
+@-o-keyframes blink {
+  0% {
+    background-position: 0% 0%;
+  }
+  10% {
+    background-position: 130% 0%;
+  }
+  100% {
+    background-position: 130% 0%;
+  }
+}
+@keyframes blink {
+  0% {
+    background-position: 0% 0%;
+  }
+  10% {
+    background-position: 130% 0%;
+  }
+  100% {
+    background-position: 130% 0%;
+  }
+}
 @-moz-keyframes rippleDrop {
   100% {
     transform: scale(2);
@@ -568,6 +676,7 @@ header .header-btn .signIn a {
 }
 .main-content .packet-container .packet-item .item-card .card-content .content span {
   padding: 5px 0;
+  position: relative;
 }
 .main-content .packet-container .packet-item .item-card .card-content .content p {
   font-size: 14px;
@@ -578,6 +687,7 @@ header .header-btn .signIn a {
   font-family: 'GraphikSemibold';
   color: #ec6608;
   text-transform: uppercase;
+  margin-bottom: 9px;
 }
 .main-content .packet-container .packet-item .item-card .card-btn-box {
   width: calc(350px - 120px);
@@ -593,7 +703,7 @@ header .header-btn .signIn a {
   align-items: center;
   width: 160px;
   height: 37px;
-  box-shadow: 6px 6px 31px rgba(9,65,145,0.16);
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.16);
   background-color: #fff;
   border-radius: 25px;
 }
@@ -603,6 +713,9 @@ header .header-btn .signIn a {
   font-size: 14px;
   font-weight: 500;
   line-height: 25px;
+}
+.main-content .packet-container .packet-item .item-card .card-btn-box .card-btn:hover a {
+  color: #fff;
 }
 .main-content .packet-container .packet-item .item-card .packet-count {
   position: absolute;
@@ -697,6 +810,9 @@ header .header-btn .signIn a {
   border: 1px solid #fff;
   margin-bottom: 20px;
 }
+.current-price .price-block .price-btn .choose-more:hover {
+  box-shadow: 8px 8px 10px rgba(0,0,0,0.16);
+}
 .current-price .price-block .price-btn .choose-more a {
   color: #fff;
   font-family: 'GraphikMedium';
@@ -710,14 +826,18 @@ header .header-btn .signIn a {
   align-items: center;
   background-color: #fff;
 }
+.current-price .price-block .price-btn .get-offer:hover {
+  box-shadow: 8px 8px 10px rgba(0,0,0,0.16);
+}
 .current-price .price-block .price-btn .get-offer a {
   color: #ec6608;
   font-family: 'GraphikMedium';
 }
 .current-price .price-block .block-bg {
   position: absolute;
-  right: 50px;
-  top: 100px;
+  right: 180px;
+  width: 400px;
+  top: 45px;
   z-index: 2;
 }
 footer {
