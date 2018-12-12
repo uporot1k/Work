@@ -528,8 +528,9 @@ nav li:hover >.submenu {
   resize: none;
   padding-left: 5px;
 }
-.offer .offer-container .offer-content-box form:not(:first-child) {
-  border-top: 1px solid #000;
+.offer .offer-container .offer-content-box .tourist-item:not(:first-child) {
+  margin-top: 30px;
+  border-top: 1px solid #008555;
 }
 .offer .offer-container .offer-content-box .btn-addit {
   width: 238px;
