@@ -68,18 +68,7 @@ return datepicker.regional.ru;
     }
   });
 
-  $(".audio-item-box").accordion({
-    header: ".item-header",
-    heightStyle: "content",
-    collapsible: true,
-    activate: function( event, ui ) {
-      if($(ui.oldHeader[0]).find('.item-header-arrow')[0]){
-        if($(ui.oldHeader[0]).find('.item-header-arrow')[0].classList.contains('rotate')){
-          $(ui.oldHeader[0]).find('.item-header-arrow')[0].classList.remove('rotate')
-       }
-      }
-    },
-  });
+ 
   $('.date').datepicker($.datepicker.regional["ru"]);
   $('#drop').dropzone({ url: "/file/post" });
   $('#tel').inputmask({"mask": " 7 (999) 999-9999"});
@@ -88,21 +77,17 @@ return datepicker.regional.ru;
   });
   $('.btn-addit').click(()=>{
     let box = $('.tourist-item')[0].cloneNode(true);
+    //console.log('input ',input.classList[0].replace('e',`e_${count}`));
     let count = $('.tourist-item').length;
     $(box).insertAfter($('.tourist-item')[count-1]);
-    $('.date').datepicker($.datepicker.regional["ru"]);
-    console.log(box);
+    let calendar = $('.pick');
+    for (let i = 0; i < calendar.length; i++) {
+      calendar[i].classList.add(`date_${i}`);
+      $(`.date_${i}`).datepicker($.datepicker.regional["ru"]);  
+    }
+   
   });
-  let accItem = $(".item-header");
-  for (let i = 0; i < accItem.length; i++) {
-    let accAr = $(".item-header-arrow");
-    accItem[i].addEventListener("click", function() {
-      for (let b = 0; b < accAr.length; b++) {
-        accAr[b].classList.remove("rotate");
-      }
-      accAr[i].classList.add("rotate");
-    });
-  }
+  
   let tabLink = $(".tabLink");
   for (let i = 0; i < tabLink.length; i++) {
     tabLink[i].addEventListener("click", function(e) {
@@ -121,4 +106,5 @@ return datepicker.regional.ru;
       return false;
     });
   }
+  
 });
