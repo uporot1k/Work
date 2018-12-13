@@ -362,7 +362,7 @@ nav li:hover >.submenu {
   padding-top: 86px;
   padding-bottom: 55px;
   background-image: url("../img/bg-1.png"), url("../img/bg-2.png"), url("../img/bg-3.png");
-  background-position: -9% 128%, 100% -17%, 105% 130%;
+  background-position: -9% 128%, 100% -19%, 105% 130%;
   background-repeat: no-repeat;
 }
 .offer .offer-container {
@@ -530,7 +530,7 @@ nav li:hover >.submenu {
 }
 .offer .offer-container .offer-content-box .tourist-item:not(:first-child) {
   margin-top: 30px;
-  border-top: 1px solid #008555;
+  border-top: 6px solid #008555;
 }
 .offer .offer-container .offer-content-box .btn-addit {
   width: 238px;
