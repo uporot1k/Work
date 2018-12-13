@@ -15,6 +15,7 @@ make-animation(name, color)
             background-color color
         }
     }
+
 .sheen:hover{
   
     a
@@ -29,7 +30,7 @@ make-animation(name, color)
     display: block;
     position: absolute;
     top: 0;
-    left: -4.5em;
+    left:-3em;
     transform: skewX(-50deg) translateX(0);
 }
 .sheen:hover:before{
@@ -44,12 +45,48 @@ make-animation(name, color)
         height 19px
     }    
 }    
+@keyframes not-bg{
+    0%{
+        height 19px
+    }
+    100%{
+        height 149px
+    }    
+}  
 
 @keyframes sheen {
   0% {
         transform: skewX(-50deg) translateX(0);
   }
   100% {
-        transform: skewX(-50deg) translateX(15.5em);
+        transform: skewX(-50deg) translateX(300px);
   }
 }
+.bs-fo{
+  box-shadow:none !important ;
+  animation bs-fo 0.4s linear !important
+  }
+.bs-fi{
+  animation bs-fi 0.4s linear !important
+  box-shadow: 0px 8px 28px -8px  !important;
+  }  
+
+ @keyframes bs-fo{
+  0%{
+  box-shadow: 0px 8px 28px -8px ;
+  }
+  100%{
+  box-shadow:none;
+  }
+
+} 
+ @keyframes bs-fi{
+  0%{
+  box-shadow:none;
+  
+  }
+  100%{
+  box-shadow: 0px 8px 28px -8px  ;
+  }
+
+} 

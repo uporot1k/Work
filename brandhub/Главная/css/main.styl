@@ -636,6 +636,7 @@ header
 					overflow: hidden;
 					
 					a
+						z-index 20
 						text-decoration: none
 					&:hover
 						a
@@ -720,7 +721,12 @@ header
 						&:after
 							animation optimum-bg 0.5s 
 							transition-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530);
-							height 19px		
+							height 19px	
+					&:not(:hover)
+						&:after
+							animation not-bg 0.5s	
+							transition-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+							height 149px				
 				&.premium
 					margin-right 0
 					

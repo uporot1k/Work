@@ -1,83 +1,110 @@
-$(document).ready(()=>{
-    
-    let body = $('body')[0];
-    console.log(body)
+$(document).ready(() => {
+  let body = $("body")[0];
+  console.log(body);
 
+  let layerOne = document.querySelector("#scene");
 
-    let layerOne = document.querySelector('#scene');
- 
-
-    body.addEventListener('mousemove',function(e){
+  body.addEventListener("mousemove", function(e) {
     var pageX = e.clientX,
-    pageY = e.clientY;
- 
-   
-    layerOne.style.transform = 'translateX(' + pageX/1000+ '%) translateY(' + pageY/1000 + '%)';
-   
-    });
-    $('.anime').addClass('hidden');
-    let anime = calcTopOffset('anime');
-    window.addEventListener('scroll',function(e) {
-        //do stuff
-        scrollTab(anime);
-        
-    });
-    
-    
-    $('.btn').mousedown((e)=>{
-        let target = e.target;
-        if(target.classList.contains('btn')){
+      pageY = e.clientY;
+
+    layerOne.style.transform =
+      "translateX(" + pageX / 1000 + "%) translateY(" + pageY / 1000 + "%)";
+  });
+  $(".anime").addClass("hidden");
+  let anime = calcTopOffset("anime");
+  window.addEventListener("scroll", function(e) {
+    //do stuff
+    scrollTab(anime);
+  });
+
+  $(".btn").mouseleave(e => {
+    let target = e.target;
+    if (target.classList.contains("btn")) {
+      target.classList.remove("bs-fi");
+
+      /*setTimeout(function(){
+                target.classList.remove('bs-fi');
+            },400);*/
+    } else {
+      let parent = $(target).parent()[0];
+      console.log(parent);
+      parent.classList.remove("bs-fi");
+
+      /*setTimeout(function(){
+                target.classList.remove('bs-fo');
+            },400);*/
+    }
+  });
+  $('.btn').mouseleave((e)=>{
+    let target = e.target;
+    if(target.classList.contains('btn')){
+
+        target.classList.remove('bs-fi');
+     
+        /*setTimeout(function(){
             target.classList.remove('bs-fi');
-            target.classList.add('bs-fo');
-        }else{
-            let parent = $(target).parent()[0];
-            parent.classList.remove('bs-fi');
-            parent.classList.add('bs-fo');
-        }
-
-    });
-    $('.btn').mouseup((e)=>{
-        let target = e.target;
-        console.log(e.target);
-        if(target.classList.contains('btn')){
-
+        },400);*/
+    }else{
+        let parent = $(target).parent()[0];
+    
+        parent.classList.remove('bs-fi');
+        
+        /*setTimeout(function(){
             target.classList.remove('bs-fo');
-            target.classList.add('bs-fi');
-        }else{
-            let parent = $(target).parent()[0];
-            console.log(parent);
-            parent.classList.remove('bs-fo');
-            parent.classList.add('bs-fi');
-        }
-        
-    });
-        
+        },400);*/
+    }
+});
+  $(".btn").mousedown(e => {
+    let target = e.target;
+    if (target.classList.contains("btn")) {
+      target.classList.remove("bs-fi");
+      target.classList.add("bs-fo");
+    } else {
+      let parent = $(target).parent()[0];
+      parent.classList.remove("bs-fi");
+      parent.classList.add("bs-fo");
+    }
+  });
+  $(".btn").mouseup(e => {
+    let target = e.target;
  
-    function scrollTab(mas){
-        mas.forEach((e)=>{
-            let different = Math.abs(e.box.boxHeight -$(window).scrollTop());
-            
-            if (different < 800){
-            
-                e.box.classList.remove('hidden');
-                e.box.classList.add('visible');
-                
-            }
-        });
+    if (target.classList.contains("btn")) {
+      target.classList.remove("bs-fo");
+      target.classList.add("bs-fi");
+      
+    } else {
+      let parent = $(target).parent()[0];
+ 
+      parent.classList.remove("bs-fo");
+      parent.classList.add("bs-fi");
+      
     }
-    function calcTopOffset(sel){
-        let selector = [];
-        let box = $(`.${sel}`);
+  });
 
-        for (let i = 0; i < box.length; i++) {
-           let boxTmp = box[i];
-           boxTmp.position = i;  
-           boxTmp.boxHeight = $(box[i]).offset().top;           
-           selector[i] = {box : boxTmp};           
-       }
-        return selector;
+  function scrollTab(mas) {
+    mas.forEach(e => {
+      let different = Math.abs(e.box.boxHeight - $(window).scrollTop());
+
+      if (different < 800) {
+        e.box.classList.remove("hidden");
+        e.box.classList.add("visible");
+      }
+    });
+  }
+  function calcTopOffset(sel) {
+    let selector = [];
+    let box = $(`.${sel}`);
+
+    for (let i = 0; i < box.length; i++) {
+      let boxTmp = box[i];
+      boxTmp.position = i;
+      boxTmp.boxHeight = $(box[i]).offset().top;
+      selector[i] = { box: boxTmp };
     }
-    /*for (let k = 0; k < headerNav.length; k++) {
+    return selector;
+  }
+  /*for (let k = 0; k < headerNav.length; k++) {
 
         $(headerNav[k]).click((event)=>{
             event.preventDefault();
