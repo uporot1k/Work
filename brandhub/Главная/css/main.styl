@@ -1,3 +1,7 @@
+@import 'animation.styl'
+$orange = #EC6608;
+$blue = #0068ff;
+$grey = #868686;	
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,7 +59,7 @@ header
 	width 100%
 	display flex
 	align-items: center
-	border-bottom:1px solid #0068ff;
+	border-bottom:1px solid $blue;
 	.header-container
 		width 100%
 		display flex
@@ -97,7 +101,7 @@ header
 						left 0
 						height 5px
 						width 100%
-						background-color #0068ff	
+						background-color $blue	
 	.header-btn
 		display none
 		margin-right: 47px
@@ -107,7 +111,7 @@ header
 			width 157px
 			height 37px
 			border-radius 30px
-			border 2px solid #0068ff
+			border 2px solid $blue
 			display flex
 			justify-content center
 			align-items: center
@@ -123,7 +127,7 @@ header
 			width 145px
 			height 37px
 			border-radius 30px
-			background-color #0068ff
+			background-color $blue
 			color #fff
 			font-family: "GraphikRegular"
 			font-size: 12px
@@ -140,7 +144,7 @@ header
 	margin-top 75px
 	width 100%
 	height 865px
-	background-color #0068ff
+	background-color $blue
 	background-image linear-gradient(123deg, rgba(0, 148, 255, 0) 0%, rgba(255, 255, 255, 0) 100%)
 	position relative
 	overflow hidden
@@ -173,7 +177,7 @@ header
 				justify-content center
 				align-items center
 				a
-					color #0068ff
+					color $blue
 					font-family "GraphikSemibold"
 					font-size 18px
 					font-weight 600
@@ -234,7 +238,7 @@ header
 					&:last-child
 						margin-bottom 0
 		.whatIsIt-annotation
-			color #0068ff
+			color $blue
 			font-family "Graphik LC"
 			font-size 30px
 			font-weight 500
@@ -249,7 +253,7 @@ header
 				content: ''
 				width 209px
 				height 9px
-				background-color #0068ff
+				background-color $blue
 				left 0
 				top -24px
 .help
@@ -274,7 +278,7 @@ header
 					bottom: -26px
 					left 0
 					position: absolute
-					background-color #0068ff
+					background-color $blue
 					content: ''
 					width 100%
 					height 12px
@@ -282,7 +286,7 @@ header
 			display flex
 			width 50%
 			.reason-number
-				color #0068ff
+				color $blue
 				font-family "GraphikSemibold"
 				font-size 144px
 				letter-spacing 0.14px
@@ -325,7 +329,7 @@ header
 					bottom: -26px
 					left 0
 					position: absolute
-					background-color #0068ff
+					background-color $blue
 					content: ''
 					width 100%
 					height 12px
@@ -337,13 +341,13 @@ header
 				padding-top: 25px
 				display flex
 				flex-direction: column
-				background-color #0068ff
+				background-color $blue
 				height 672px
 				box-shadow 7px 7px 33px rgba(50, 73, 189, 0.35)
 				&.first
 					.item-caption
 						margin-top: 3px
-					background-color #0068ff
+					background-color $blue
 					box-shadow 7px 7px 33px rgba(50, 73, 189, 0.35)
 					perspective: 1000px
 				&.second
@@ -402,7 +406,7 @@ header
 			width 623px
 			position relative
 			.body-word
-				color #0068ff
+				color $blue
 				font-family "GraphikSemibold"
 				font-size 48px
 				font-weight 600
@@ -436,7 +440,7 @@ header
 					bottom: -26px
 					left 0
 					position: absolute
-					background-color #0068ff
+					background-color $blue
 					content: ''
 					width 100%
 					height 12px
@@ -466,7 +470,7 @@ header
 						letter-spacing 0.14px
 						line-height 113px
 					.number-caption
-						color #868686
+						color $grey 
 						font-family "GraphikRegular"
 						font-size 16px
 						font-weight 500
@@ -474,18 +478,18 @@ header
 						line-height 19px
 					&.active
 						.number-word
-							color #0068ff
+							color $blue
 							position relative
 							&:after
 								bottom: 6px
 								left 0
 								position: absolute
-								background-color #0068ff
+								background-color $blue
 								content: ''
 								width 100%
 								height 9px
 						.number-caption
-							color #0068ff	
+							color $blue	
 		.slaider-window
 			box-shadow 0 4px 4px rgba(0, 0, 0, 0.25)
 			margin-top: 49px
@@ -496,7 +500,7 @@ header
 				width 100%
 				height 100%
 				li
-					background-color #0068ff	
+					background-color $blue	
 			.slick-dots
 				display none !important
 		.slaider-annotation
@@ -523,14 +527,14 @@ header
 				bottom: -26px
 				left 0
 				position: absolute
-				background-color #0068ff
+				background-color $blue
 				content: ''
 				width 100%
 				height 12px
 	.service-cards-container
 		width 100%
 		height 984px
-		background-color #0068ff
+		background-color $blue
 		padding-top: 48px	
 		.cards-container-word
 			color #ffffff
@@ -629,8 +633,13 @@ header
 					bottom 66px
 					left calc(50% - 82px)
 					border-radius 25px
+					overflow: hidden;
+					
 					a
 						text-decoration: none
+					&:hover
+						a
+							color #fff !important	
 
 				&:after
 					position: absolute
@@ -639,65 +648,82 @@ header
 					bottom 0
 					z-index -1
 				&.basic
+					
 					.item-word
-						color #0068ff
+						color $blue
 						&:after
 							width 62px
-							background-color #0068ff
+							background-color $blue
 					.item-annotation
 						p
 							&:before
-								background-color #0068ff
+								background-color $blue
 							&.plus
 								&:before
 
-									background-color #0068ff
+									background-color $blue
 								&:after
 
-									background-color #0068ff
+									background-color $blue
 							
 					.item-btn
-						box-shadow: 0px 8px 28px -8px #0068ff
+						box-shadow: 0px 8px 28px -8px $blue
+						&:hover
+							name-animation($blue,basic)
+							background-color $blue	
+						&.sheen
+							
 						a
-							color #0068ff	
+							color $blue	
     					
 					&:after
 						height 19px
 						background-color #3e8dff
-						
+					
 
 				&.optimum
 					height 622px
 					.item-word
-						color #ec6608
+						color $orange
 						&:after
 							width 147px
-							background-color  #ec6608
+							background-color  $orange
 					.item-annotation
 						p
 							
 							&:before
-								background-color #ec6608
+								background-color $orange
 							&.plus
 								&:before
 
-									background-color #ec6608
+									background-color $orange
 								&:after
 
-									background-color #ec6608	
+									background-color $orange	
 					.item-btn
 						left calc(50% - 120px)
 						width 239px
 						height 48px
 						box-shadow: 0px 8px 28px -8px  #000
+						&:hover
+							name-animation($orange,optimum)
+							background-color $orange
 						a
-							color #ec6608
+							color $orange
     					
 					&:after
 						height 149px
-						background-color #ec6608
+						background-color $orange
+					&:hover
+						
+						
+						&:after
+							animation optimum-bg 0.5s 
+							transition-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+							height 19px		
 				&.premium
 					margin-right 0
+					
 					.item-word
 						color #4b4b4b
 						&:after
@@ -716,12 +742,16 @@ header
 									background-color #4b4b4b
 					.item-btn
 						box-shadow: 0px 8px 28px -8px  #4b4b4b
+						&:hover
+							name-animation($grey,premium)
+							background-color $grey
 						a
 							color #4b4b4b
     					
 					&:after
 						height 19px
 						background-color #606060
+					
 				.item-btn
 					width 165px
 					height 37px
@@ -747,7 +777,7 @@ header
 				bottom: -26px
 				left 0
 				position: absolute
-				background-color #0068ff
+				background-color $blue
 				content: ''
 				width 100%
 				height 12px
@@ -758,7 +788,7 @@ header
 				img
 					max-width 100%
 .footer-info
-	background-color: #0068ff;
+	background-color: $blue;
 	color: #ffffff
 	padding-top: 60px
 	padding-bottom: 104px
@@ -812,7 +842,7 @@ header
 					font-weight 600
 					letter-spacing 0.14px
 					line-height 16px
-					color #0068ff
+					color $blue
 footer
 	background-color #4b4b4b
 	position relative
@@ -830,7 +860,7 @@ footer
 			font-weight 400
 			line-height 15px
 			&:hover
-				color:#EC6608
+				color:$orange
 			
 			
 
@@ -859,7 +889,7 @@ footer
 					font-weight 400
 					line-height 15px
 					&:hover
-						color:#EC6608
+						color: $orange
 		.footer-info-box
 			max-width 406px
 			display flex
@@ -902,13 +932,13 @@ footer
 		button
 			&:before
 				transform: scale(2)
-				color: #0068ff;
+				color: $blue;
 		&.slick-active			
 			button
 				&:before
 					transform: scale(2)
 					opacity 1;
-					color: #0068ff;
+					color: $blue;
 .current:after{
 	animation-name current1
     animation-duration 1s
