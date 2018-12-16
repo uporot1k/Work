@@ -1,4 +1,3 @@
-import 'uimini'
 <template lang='pug'>
   .wrapper
     header
@@ -26,9 +25,11 @@ import 'uimini'
                   @click="menuShow = false"
                 )
                   router-link.navbar-link(
-                    to="`${link.url}`"
+                    :to="`${link.url}`"
                   ) {{link.title}}
-    router-view
+
+    .container
+      router-view
 </template>
 
 <script>
@@ -38,6 +39,7 @@ export default {
       menuShow: false,
       linkMenu: [
         {title: 'Home', url: '/'},
+        {title: 'Task', url: '/task'},
         {title: 'Login', url: '/login'},
         {title: 'Registrarion', url: '/registration'}
       ]
