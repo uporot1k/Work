@@ -69,23 +69,22 @@ return datepicker.regional.ru;
   });
 
  
-  $('.date').datepicker($.datepicker.regional["ru"]);
+  $('.pick').datepicker($.datepicker.regional["ru"]);
   $('#drop').dropzone({ url: "/file/post" });
   $('#tel').inputmask({"mask": " 7 (999) 999-9999"});
   $('#form-submit').click(()=>{
     $('#offer').submit();
   });
+  
   $('.btn-addit').click(()=>{
     let box = $('.tourist-item')[0].cloneNode(true);
-    //console.log('input ',input.classList[0].replace('e',`e_${count}`));
+    $(box).find('input').val('');
     let count = $('.tourist-item').length;
+    let calendar = $(box).find('.pick');
+    $(calendar).removeClass().addClass('pick');
+    $(calendar).removeAttr('id') 
+    $(calendar).datepicker($.datepicker.regional["ru"]);  
     $(box).insertAfter($('.tourist-item')[count-1]);
-    let calendar = $('.pick');
-    for (let i = 0; i < calendar.length; i++) {
-      calendar[i].classList.add(`date_${i}`);
-      $(`.date_${i}`).datepicker($.datepicker.regional["ru"]);  
-    }
-   
   });
   
   let tabLink = $(".tabLink");
