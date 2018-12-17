@@ -68,10 +68,17 @@
             )
             p {{serialTime}}
         .tag-list
-        .ui-tag__wrapper
-          .ui-tag
-            span.tag-title Film
-            span.button-close
+          .ui-tag__wrapper(
+            v-for="tag in tags"
+            :key="tag.title"
+          )
+            .ui-tag(
+              @click="addTagUsed(tag)"
+              :class="{ active: tag.use }"
+            )
+              span.tag-title {{tag.title}}
+              span.button-close
+        p {{ tagsUsed }}
 </template>
 <script>
 export default {
@@ -88,7 +95,22 @@ export default {
       // Serial
       serialSeason: 1,
       serialSeries: 11,
-      serialSeriesMinutes: 40
+      serialSeriesMinutes: 40,
+      tagsUsed: [],
+      tags: [
+        {
+          title: 'Comedy',
+          use: false
+        },
+        {
+          title: 'Western',
+          use: false
+        },
+        {
+          title: 'Fantastic',
+          use: false
+        }
+      ]
     }
   },
   methods: {
@@ -96,11 +118,18 @@ export default {
       if (this.taskTitle === '') {
         return
       }
+      let time
+      if (this.whatWatch === 'Film') {
+        time = this.filmTime
+      } else {
+        time = this.serialTime
+      }
       const task = {
         id: this.taskId,
         title: this.taskTitle,
         description: this.taskDescription,
         whatWatch: this.whatWatch,
+        time,
         completed: false,
         editing: false
       }
@@ -109,6 +138,16 @@ export default {
       this.taskId += 1
       this.taskTitle = ''
       this.taskDescription = ''
+    },
+    addTagUsed (tag) {
+      tag.use = !tag.use
+      if (tag.use) {
+        this.tagsUsed.push(
+          tag.title
+        )
+      } else {
+        this.tagsUsed.splice(tag.title, 1)
+      }
     },
     getHoursAndMinutes (minutes) {
       let hours = Math.trunc(minutes / 60)
@@ -146,4 +185,8 @@ export default {
   .time-input
     max-width 80px
     margin-right 10px
+  .ui-tag
+    margin-right 20px
+    &:last-child
+      margin-bottom 0
 </style>
