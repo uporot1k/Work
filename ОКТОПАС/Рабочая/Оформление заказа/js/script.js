@@ -78,8 +78,8 @@ return datepicker.regional.ru;
   
   $('.btn-addit').click(()=>{
     let box = $('.tourist-item')[0].cloneNode(true);
-    $(box).find('input').val('');
     let count = $('.tourist-item').length;
+    $(box).find('input').val('');
     let calendar = $(box).find('.pick');
     $(calendar).removeClass().addClass('pick');
     $(calendar).removeAttr('id') 
