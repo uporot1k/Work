@@ -67,6 +67,26 @@
               v-model="serialSeriesMinutes"
             )
             p {{serialTime}}
+
+        .tag-list.tag-list-add
+          .ui-tag__wrapper(
+            @click="tagMenuShow = !tagMenuShow"
+          )
+            .ui-tag
+              span.tag-title Add New
+              span.button-close(
+                :class="{ active: !tagMenuShow }"
+              )
+        .tag-list.tag-list-menu(
+          v-if="tagMenuShow"
+        )
+          input.tag-add--input(
+            type="text"
+            placeholder="New tag"
+            v-model="tagTitle"
+            @keyup.enter="newTag"
+          )
+          .button.button-default() Send
         .tag-list
           .ui-tag__wrapper(
             v-for="tag in tags"

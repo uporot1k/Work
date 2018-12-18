@@ -26,66 +26,66 @@ a
 }
 @-moz-keyframes optimum-bg {
   0% {
-    height: 149px;
+    height: 19px;
   }
   100% {
-    height: 19px;
+    height: 35px;
   }
 }
 @-webkit-keyframes optimum-bg {
   0% {
-    height: 149px;
+    height: 19px;
   }
   100% {
-    height: 19px;
+    height: 35px;
   }
 }
 @-o-keyframes optimum-bg {
   0% {
-    height: 149px;
+    height: 19px;
   }
   100% {
-    height: 19px;
+    height: 35px;
   }
 }
 @keyframes optimum-bg {
   0% {
-    height: 149px;
+    height: 19px;
   }
   100% {
-    height: 19px;
+    height: 35px;
   }
 }
 @-moz-keyframes not-bg {
   0% {
-    height: 19px;
+    height: 35px;
   }
   100% {
-    height: 149px;
+    height: 19px;
   }
 }
 @-webkit-keyframes not-bg {
   0% {
-    height: 19px;
+    height: 35px;
   }
   100% {
-    height: 149px;
+    height: 19px;
   }
 }
 @-o-keyframes not-bg {
   0% {
-    height: 19px;
+    height: 35px;
   }
   100% {
-    height: 149px;
+    height: 19px;
   }
 }
 @keyframes not-bg {
   0% {
-    height: 19px;
+    height: 35px;
   }
   100% {
-    height: 149px;
+    height: 19px;
   }
 }
 @-moz-keyframes sheen {
@@ -978,12 +978,12 @@ header .header-btn .signIn a {
   background-color: #fff;
   width: 165px;
   height: 37px;
-  z-index: 10;
   position: absolute;
   bottom: 66px;
   left: calc(50% - 82px);
   border-radius: 25px;
   overflow: hidden;
+  z-index: 30;
 }
 .service-puckets .service-cards-container .cards-box .cards-item .item-btn a {
   z-index: 20;
@@ -991,6 +991,55 @@ header .header-btn .signIn a {
 }
 .service-puckets .service-cards-container .cards-box .cards-item .item-btn:hover a {
   color: #fff !important;
+}
+.service-puckets .service-cards-container .cards-box .cards-item .item-btn.reverse {
+  bottom: 120px;
+  background-color: #ec6608;
+}
+.service-puckets .service-cards-container .cards-box .cards-item .item-btn.reverse:hover {
+  animation-name: optimum-white;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  background-color: #fff;
+}
+@-moz-keyframes optimum-white {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+@-webkit-keyframes optimum-white {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+@-o-keyframes optimum-white {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+@keyframes optimum-white {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+.service-puckets .service-cards-container .cards-box .cards-item .item-btn.reverse a {
+  color: #fff !important;
+}
+.service-puckets .service-cards-container .cards-box .cards-item .item-btn:after {
+  height: 149px;
+  background-color: #fff !important;
 }
 .service-puckets .service-cards-container .cards-box .cards-item:after {
   position: absolute;
@@ -1137,12 +1186,12 @@ header .header-btn .signIn a {
 .service-puckets .service-cards-container .cards-box .cards-item.optimum:hover:after {
   animation: optimum-bg 0.5s;
   transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  height: 19px;
+  height: 35px;
 }
 .service-puckets .service-cards-container .cards-box .cards-item.optimum:not(:hover):after {
   animation: not-bg 0.5s;
   transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  height: 149px;
+  height: 19px;
 }
 .service-puckets .service-cards-container .cards-box .cards-item.premium {
   margin-right: 0;
