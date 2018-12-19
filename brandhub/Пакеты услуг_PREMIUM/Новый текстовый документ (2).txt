@@ -25,7 +25,7 @@ make-animation(name, color)
   }
 
 .button_fade-blue{
-    hover-out(button_fade-blue, #0068ff,#fff)
+    hover-out(button_fade-blue, #0068ff, #fff )
     animation: button_fade-blue;
     animation-duration: 0.3s;
     animation-timing-function: linear;
@@ -70,7 +70,7 @@ make-animation(name, color)
     a
     color: #fff !important
   }
-.sheen:before{
+.sheen:before
   content: "";
   //background: linear-gradient(to right, rgba(125,185,232,0) 1%,rgba(30,87,153,0) 16%,rgba(30,87,153,0.19) 20%,rgba(78,136,193,1) 37%,rgba(125,185,232,1) 54%,rgba(125,185,232,1) 62%,rgba(125,185,232,0.7) 69%,rgba(125,185,232,0) 90%);
   background-color #FFF
@@ -81,17 +81,17 @@ make-animation(name, color)
   top: 0;
   left: -4.5em;
   transform: skewX(-50deg) translateX(0);
-}
-.sheen:hover:before{
+
+.sheen:hover:before
   animation sheen 0.4s linear;
-}
-.hidden{
-	opacity 0;
-}
-.visible{
-opacity 1
-animation anime 1s linear;
-}
+
+.hidden
+	opacity 0
+
+.visible
+	opacity 1
+  animation anime 1s linear
+
 .bs-fo{
   box-shadow:none !important ;
   animation bs-fo 0.4s linear !important
