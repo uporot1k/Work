@@ -448,6 +448,11 @@ nav li:hover >.submenu {
   padding-top: 10px;
   padding-left: 66px;
 }
+.offer .offer-container .offer-content-box form .offer-info .offer-label.long #file-wrapper .list-files,
+.offer .offer-container .offer-content-box form .tourist-item .offer-label.long #file-wrapper .list-files {
+  max-width: 250px;
+  word-wrap: break-word;
+}
 .offer .offer-container .offer-content-box form .offer-info .offer-label.long #file-wrapper #file,
 .offer .offer-container .offer-content-box form .tourist-item .offer-label.long #file-wrapper #file {
   display: none;
