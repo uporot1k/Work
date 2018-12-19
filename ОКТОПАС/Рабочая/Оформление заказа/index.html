@@ -8,10 +8,10 @@
          src="https://code.jquery.com/jquery-3.3.1.min.js"
          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
          crossorigin="anonymous"></script>
-         <script
-  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-  crossorigin="anonymous"></script>
+      <script
+         src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+         crossorigin="anonymous"></script>
       <link rel="stylesheet" href="css/grid.css">
       <link rel="stylesheet" href="css/jquery-ui.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
@@ -222,38 +222,46 @@
                                  <label class="offer-label"><span>Имя</span>  <input type="text" name="first-name[]" id="" placeholder="Иван" ></label>
                                  <label class="offer-label"><span>Фамилия</span> <input type="text" name="last-name[]" id="" placeholder="Иванов"></label>
                                  <label class="offer-label short"><span>Выберите дату</span> <input type="text" name="date[]"  class="pick" placeholder="01\01\1990"><i class="far fa-calendar-alt"></i></label>
-                                 <label class="offer-label small"><span>Пол</span> <select name="sex" id="">
-                                    <option value="male">Мужской</option>
-                                    <option value="female">Женский</option>
-                                 </select></label>
-                                 <label class="offer-label short"><span>Тип билета</span> <select name="type[]" id="">
+                                 <label class="offer-label small">
+                                    <span>Пол</span> 
+                                    <select name="sex" id="">
+                                       <option value="male">Мужской</option>
+                                       <option value="female">Женский</option>
+                                    </select>
+                                 </label>
+                                 <label class="offer-label short">
+                                    <span>Тип билета</span> 
+                                    <select name="type[]" id="">
                                        <option value="male">Взрослый</option>
                                        <option value="child">Детский</option>
                                        <option value="preferential">Льготный</option>
-                                    </select></label>
-                                 <label class="offer-label long"><span>Свидетельство о рождении</span> <div id="file-wrapper">
-                                    <input type="file" name="birth[]" id="file">
-                                    <label for="file"><span><i class="fas fa-file"></i><span class="list-files">Прикрепить фаил  (PDF,JPG)  </span></span></label>
+                                    </select>
+                                 </label>
+                                 <label class="offer-label long">
+                                    <span>Свидетельство о рождении</span> 
+                                    <div id="file-wrapper">
+                                       <input type="file" name="birth[]" id="file">
+                                 <label for="file"><span><i class="fas fa-file"></i><span class="list-files">Прикрепить фаил  (PDF,JPG)  </span></span></label>
                                  </div></label>   
-                                 <label class="offer-label long"><span>Гражданство</span> <select name="country[]" id="">
+                                 <label class="offer-label long">
+                                    <span>Гражданство</span> 
+                                    <select name="country[]" id="">
                                        <option value="foreign">Иностранный гражданин</option>
                                        <option value="RF">РФ</option>
-                                    </select></label>
-                                 </div>   
-                                    <label class="btn-addit"><span><i class="fas fa-user-circle"></i>Добавить туриста</span></label>
-                              
+                                    </select>
+                                 </label>
+                              </div>
+                              <label class="btn-addit"><span><i class="fas fa-user-circle"></i>Добавить туриста</span></label>
                               <div class="offer-info">
-                                    <label class="offer-label"><span>Email</span>  <input type="text" name="email" id="" placeholder="12345@mail.ru"></label>
-                                    <label class="offer-label"><span>Номер телефона</span>  <input type="tel" name="tel" id="tel" placeholder="+7"></label>
-                                    <label class="offer-label big"><span>Комментарии</span><textarea name="message" id="" placeholder="Другая важная информация" cols="30" rows="10"></textarea></label>
-                                    <label class="offer-label max"><input type="checkbox" name="" id=""> - Знаю русский/английский язык</label>
-                                    <label class="offer-label max"><input type="checkbox" name="" id=""> - Согласие на рассылку</label>
-                                    <label class="offer-label max"><input type="checkbox" name="" id=""> - Согласен с&nbsp;<a href="#">  договором оферты </a>&nbsp;и обработку персональных данных</label>
-                                    
-                                 </div>
-                                 <div id="form-submit"><span><i class="fas fa-credit-card"></i>Перейти к оплате</span></div>
-                           </form>	
-
+                                 <label class="offer-label"><span>Email</span>  <input type="text" name="email" id="" placeholder="12345@mail.ru"></label>
+                                 <label class="offer-label"><span>Номер телефона</span>  <input type="tel" name="tel" id="tel" placeholder="+7"></label>
+                                 <label class="offer-label big"><span>Комментарии</span><textarea name="message" id="" placeholder="Другая важная информация" cols="30" rows="10"></textarea></label>
+                                 <label class="offer-label max"><input type="checkbox" name="" id=""> - Знаю русский/английский язык</label>
+                                 <label class="offer-label max"><input type="checkbox" name="" id=""> - Согласие на рассылку</label>
+                                 <label class="offer-label max"><input type="checkbox" name="" id=""> - Согласен с&nbsp;<a href="#">  договором оферты </a>&nbsp;и обработку персональных данных</label>
+                              </div>
+                              <div id="form-submit"><span><i class="fas fa-credit-card"></i>Перейти к оплате</span></div>
+                           </form>
                         </div>
                      </div>
                   </div>

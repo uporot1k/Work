@@ -98,7 +98,12 @@ return datepicker.regional.ru;
     }
     
     listFiles.className = 'list-files'; // добавим класс, чтобы было удобнее стилять
-    listFiles.innerHTML = arrayFiles[0].name; 
+    if (arrayFiles != '') {
+      listFiles.innerHTML = arrayFiles[0].name; 
+    } else {
+      listFiles.innerHTML = 'Прикрепить фаил  (PDF,JPG)';
+    }
+    
     console.log(listFiles);
 
     //listFiles.innerHTML = li;
