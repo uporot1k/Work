@@ -231,7 +231,10 @@
                                        <option value="child">Детский</option>
                                        <option value="preferential">Льготный</option>
                                     </select></label>
-                                 <label class="offer-label long"><span>Свидетельство о рождении</span><div id="drop"><span><i class="fas fa-file"></i>Прикрепить фаил  (PDF,JPG)  </span></div> <input type="file" name="birth" id="file" style='display: none' multiple></label>   
+                                 <label class="offer-label long"><span>Свидетельство о рождении</span> <div id="file-wrapper">
+                                    <input type="file" name="birth[]" id="file">
+                                    <label for="file"><span><i class="fas fa-file"></i><span class="list-files">Прикрепить фаил  (PDF,JPG)  </span></span></label>
+                                 </div></label>   
                                  <label class="offer-label long"><span>Гражданство</span> <select name="country[]" id="">
                                        <option value="foreign">Иностранный гражданин</option>
                                        <option value="RF">РФ</option>

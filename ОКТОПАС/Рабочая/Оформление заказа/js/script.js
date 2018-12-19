@@ -86,7 +86,25 @@ return datepicker.regional.ru;
     $(calendar).datepicker($.datepicker.regional["ru"]);  
     $(box).insertAfter($('.tourist-item')[count-1]);
   });
-  
+  $('#file').on('change', function() {
+    var arrayFiles = this.files, // массив с выбранными фалами
+        formItem = this.parentNode, // родительский элемент, для того чтобы вставить список с файлами
+        listFiles = document.createElement('span'); // список с файлами
+         // файлы
+    
+    // Если список с файлами уже вставлен в ДОМ, то удаляем его
+    if (formItem.querySelector('.list-files')) {
+      formItem.querySelector('.list-files').remove();
+    }
+    
+    listFiles.className = 'list-files'; // добавим класс, чтобы было удобнее стилять
+    listFiles.innerHTML = arrayFiles[0].name; 
+    console.log(listFiles);
+
+    //listFiles.innerHTML = li;
+    
+    formItem.appendChild(listFiles);  
+  });
   let tabLink = $(".tabLink");
   for (let i = 0; i < tabLink.length; i++) {
     tabLink[i].addEventListener("click", function(e) {
