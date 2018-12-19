@@ -4,8 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>BrandHub</title>
-      <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
-      <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
+      <link rel="stylesheet" href="js/fancybox-master/fancybox-master/dist/jquery.fancybox.min.css">
       <link rel="stylesheet" href="js/scroll-effects/scroll-effects/assets/animate.css">
       <link rel="stylesheet" href="js/rippleria-master/rippleria-master/css/jquery.rippleria.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -90,7 +89,7 @@
                         </div>
                      </div>
                      <div class="card-btn-box">
-                        <div class="card-btn sheen btn" data-rippleria ><a href="#">Подробнее</a></div>
+                        <a data-fancybox data-options='{ "smallBtn" : false, "toolBar" : false}' data-src="#concept" href="#"><div  class="card-btn sheen btn" data-rippleria >Подробнее</div></a>
                      </div>
                      <div class="packet-count"><span class="count"></span></div>
                      
@@ -137,7 +136,7 @@
                         </div>
                      </div>
                      <div class="card-btn-box">
-                        <div class="card-btn sheen btn" data-rippleria ><a href="#">Подробнее</a></div>
+                        <a data-fancybox data-options='{ "smallBtn" : false, "toolBar" : false}' data-src="#concept1" href="#"><div  class="card-btn sheen btn" data-rippleria >Подробнее</div></a>
                      </div>
                     
                      <div class="packet-count"><span class="count"></span><span class="count"></span><span class="count"></span></div>
@@ -198,9 +197,219 @@
             </div>
          </div>
       </footer>
+      <div class="modal-window concept" id="concept">
+         <div class="modal-window__head">
+            <div class="head__number">
+               <span class="number">3</span>
+               <span>КОНЦЕПЦИИ<br> ПОЗИЦИОНИРОВАНИЯ</span>
+            </div>
+            <div class="head__title">
+               <p>
+                  Позиционирование – это разработка предложения и образа бренда, которые 
+                  направленны на формирование или закрепление конкурентной позиции 
+                  бренда на определенном рынке. 
+                  <br>
+                  <br>
+                  Позиционировать бренд невозможно для всех, потому что это размывает 
+                  образ бренда.
+                  <br>
+                  <br>
+                  Мы предлагаем комплексное решение по позиционированию которое 
+                  включает в себя:
+               </p>
+            </div>
+         </div>
+         <div class="modal-window__content">
+            <div class="content__body">
+               <div class="content__item">
+                  <div class="item__head"><span>Обзор рынка</span></div>
+                  <div class="item__body">
+                     <p>
+                        Поэтапный сбор информации о целевом рынке вашего продукта или услуг  
+                     </p>
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>Целевая аудитория</span></div>
+                  <div class="item__body">
+                     <p>
+                        Сравнительный анализ списка прямых и косвенных конкурентных игроков целевого сегмента для понимания ценового предложения и выявления сильных и слабых сторон игроков
+                     </p>
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>Сегментация</span></div>
+                  <div class="item__body">
+                     <p>
+                        Процесс разделения целевого рынка на группы потребителей для анализа целевой аудитории и эффективного выстраивания коммуникационной стратегии в целевом сегменте вашего бизнеса
+                     </p>
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>U & A</span></div>
+                  <div class="item__body">
+                     <p>
+                        Комплексное исследование привычек и предпочтений потребителя в отношении исследуемой продуктовой категории
+                     </p>
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>Конкурентный обзор</span></div>
+                  <div class="item__body">
+                     <p>
+                        Выявление ключевых тенденций целевого рынка в конкретном временном периоде
+                     </p>
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>Обзор категории</span></div>
+                  <div class="item__body">
+                     <p>
+                        Это обзор целевой товарной категории для  аналитики конкурентных групп и ценовых сегментов, а также ассортиментного ряда
+                     </p>
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>SWOT-анализ</span></div>
+                  <div class="item__body">
+                     <p>
+                        Ключевой метод оценки сильных и 
+                        слабых сторон вашего бренда, а 
+                        также выявление возможностей и 
+                        угроз внешней среды
+                     </p>  
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>Тренды</span></div>
+                  <div class="item__body">
+                     <p>
+                        Выявление ключевых тенденций 
+                        целевого рынка в конкретном 
+                        временном периоде
+                        
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="content__footer">
+               <p>Позиционирование повышает эффективность<br> 
+                  рекламы и продаж ваших продуктов или услуг.</p>
+               <div class="footer__btn sheen btn" data-rippleria >
+                  <a href="#"><i class="fas fa-arrow-left"></i>Вернуться</a>
+               </div>   
+            </div>
+         </div>
+         <div class="modal__close"><img  class="close_black" src="img/close_black.png" alt=""></div>
+      </div>
+      <div class="modal-window concept" id="concept1">
+         <div class="modal-window__head">
+            <div class="head__number">
+               <span class="number">2</span>
+               <span>КОНЦЕПЦИИ<br> ПОЗИЦИОНИРОВАНИЯ</span>
+            </div>
+            <div class="head__title">
+               <p>
+                  Позиционирование – это разработка предложения и образа бренда, которые 
+                  направленны на формирование или закрепление конкурентной позиции 
+                  бренда на определенном рынке. 
+                  <br>
+                  <br>
+                  Позиционировать бренд невозможно для всех, потому что это размывает 
+                  образ бренда.
+                  <br>
+                  <br>
+                  Мы предлагаем комплексное решение по позиционированию которое 
+                  включает в себя:
+               </p>
+            </div>
+         </div>
+         <div class="modal-window__content">
+            <div class="content__body">
+               <div class="content__item">
+                  <div class="item__head"><span>Обзор рынка</span></div>
+                  <div class="item__body">
+                     <p>
+                        Поэтапный сбор информации о целевом рынке вашего продукта или услуг  
+                     </p>
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>Целевая аудитория</span></div>
+                  <div class="item__body">
+                     <p>
+                        Сравнительный анализ списка прямых и косвенных конкурентных игроков целевого сегмента для понимания ценового предложения и выявления сильных и слабых сторон игроков
+                     </p>
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>Сегментация</span></div>
+                  <div class="item__body">
+                     <p>
+                        Процесс разделения целевого рынка на группы потребителей для анализа целевой аудитории и эффективного выстраивания коммуникационной стратегии в целевом сегменте вашего бизнеса
+                     </p>
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>U & A</span></div>
+                  <div class="item__body">
+                     <p>
+                        Комплексное исследование привычек и предпочтений потребителя в отношении исследуемой продуктовой категории
+                     </p>
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>Конкурентный обзор</span></div>
+                  <div class="item__body">
+                     <p>
+                        Выявление ключевых тенденций целевого рынка в конкретном временном периоде
+                     </p>
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>Обзор категории</span></div>
+                  <div class="item__body">
+                     <p>
+                        Это обзор целевой товарной категории для  аналитики конкурентных групп и ценовых сегментов, а также ассортиментного ряда
+                     </p>
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>SWOT-анализ</span></div>
+                  <div class="item__body">
+                     <p>
+                        Ключевой метод оценки сильных и 
+                        слабых сторон вашего бренда, а 
+                        также выявление возможностей и 
+                        угроз внешней среды
+                     </p>  
+                  </div>
+               </div>
+               <div class="content__item">
+                  <div class="item__head"><span>Тренды</span></div>
+                  <div class="item__body">
+                     <p>
+                        Выявление ключевых тенденций 
+                        целевого рынка в конкретном 
+                        временном периоде
+                        
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="content__footer">
+               <p>Позиционирование повышает эффективность<br> 
+                  рекламы и продаж ваших продуктов или услуг.</p>
+               <div class="footer__btn sheen btn" data-rippleria >
+                  <a href="#"><i class="fas fa-arrow-left"></i>Вернуться</a>
+               </div>   
+            </div>
+         </div>
+         <div class="modal__close"><img  class="close_black"src="img/close_black.png" alt=""></div>
+      </div>
+      <script src="js/fancybox-master/fancybox-master/dist/jquery.fancybox.min.js"></script>
       <script src="js/rippleria-master/rippleria-master/js/jquery.rippleria.min.js"></script>
       <script src="js/scroll-effects/scroll-effects/assets/viewportchecker.js"></script>
-      <script src="js/slick-1.8.1/slick/slick.min.js"></script>
       <script src="js/script.js"></script>
    </body>
 </html>
