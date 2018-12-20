@@ -86,7 +86,9 @@
             v-model="tagTitle"
             @keyup.enter="newTag"
           )
-          .button.button-default() Send
+          .button.button-default(
+            @click="newTag"
+          ) Send
         .tag-list
           .ui-tag__wrapper(
             v-for="tag in tags"
@@ -94,7 +96,7 @@
           )
             .ui-tag(
               @click="addTagUsed(tag)"
-              :class="{ active: tag.use }"
+              :class="{ used: tag.use }"
             )
               span.tag-title {{tag.title}}
               span.button-close
@@ -116,6 +118,9 @@ export default {
       serialSeason: 1,
       serialSeries: 11,
       serialSeriesMinutes: 40,
+      // Tag
+      tagMenuShow: false,
+      tagTitle: '',
       tagsUsed: [],
       tags: [
         {
@@ -134,6 +139,19 @@ export default {
     }
   },
   methods: {
+    newTag () {
+      if (this.tagTitle === '') {
+        return
+      }
+      this.tags.push(
+        {
+          title: this.tagTitle,
+          used: false
+        })
+      // const tag = {
+      //   title: this.taskTitle,
+      // }
+    },
     newTask () {
       if (this.taskTitle === '') {
         return
@@ -150,14 +168,17 @@ export default {
         description: this.taskDescription,
         whatWatch: this.whatWatch,
         time,
+        tagsUsed: this.tagsUsed,
         completed: false,
         editing: false
       }
+      this.$store.dispatch('newTask', task)
       console.log(task)
       // Reset
       this.taskId += 1
       this.taskTitle = ''
       this.taskDescription = ''
+      this.tagsUsed = []
     },
     addTagUsed (tag) {
       tag.use = !tag.use
@@ -205,7 +226,28 @@ export default {
   .time-input
     max-width 80px
     margin-right 10px
+  .tag-list
+    margin-bottom 20px
+  .ui-tag__wrapper
+    margin-right 18px
+    margin-bottom 10px
+    &:last-child
+      margin-right 0
   .ui-tag
+    .button-close
+      &.active
+        transform rotate(45deg)
+    &.used
+      background-color #444ce0
+      color #ffffff
+      .button-close
+        &:before,
+        &:after
+          background-color #fff
+  .tag-list--menu
+    display flex
+    justify-content space-between
+    align-items center
     margin-right 20px
     &:last-child
       margin-bottom 0
